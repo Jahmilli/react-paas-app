@@ -1,13 +1,14 @@
 import React from 'react';
+import TopNavigation from './TopNavigation.jsx';
 
 export default class Header extends React.Component {
 
   render() {
 
     return (
-    <div>
-        <h1>A title</h1>
-    </div>
+      <header>
+      <TopNavigation />
+      </header>
     );
   }
 }
