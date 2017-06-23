@@ -1,11 +1,12 @@
 import React from 'react';
+import TopNavigation from '../header/Navigation';
 
 export default class Footer extends React.Component {
   render() {
     return (
-      <div>
-        <h2>This is a footer</h2>
-      </div>
+      <footer>
+        <TopNavigation />
+      </footer>
     );
   }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import TopNavigation from './TopNavigation';
+import Navigation from './Navigation';
 import Title from './Title';
 
 export default class Header extends React.Component {
@@ -8,7 +8,9 @@ export default class Header extends React.Component {
 
     return (
       <header>
-      <TopNavigation />
+        <div className="Nav-Right">
+          <Navigation />
+        </div>
       <Title />
       </header>
     );
