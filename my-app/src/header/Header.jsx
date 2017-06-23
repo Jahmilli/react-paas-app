@@ -1,5 +1,6 @@
 import React from 'react';
-import TopNavigation from './TopNavigation.jsx';
+import TopNavigation from './TopNavigation';
+import Title from './Title';
 
 export default class Header extends React.Component {
 
@@ -8,6 +9,7 @@ export default class Header extends React.Component {
     return (
       <header>
       <TopNavigation />
+      <Title />
       </header>
     );
   }

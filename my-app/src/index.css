@@ -1,21 +1,55 @@
 
 
-.navbar-lockup {
+.Navbar-Lockup {
   margin-left: 10px;
-  text-decoration: none;
+  margin-right: 10px;
+  background-color: rgba(255,255,255,0.6);
+  height: 50px;
+  width: 100%;
+  margin: 0px;
 }
 
-.nav-right {
-  margin-left: 10px;
-  text-decoration: none;
+.Nav-Right {
+  float: right;
+  margin-top: 15px;
+  margin-right: 20px;
 }
 
-.nav-right a {
-  margin-left: 10px;
+.Nav-Right a {
+  color: rgba(0,0,0,0.7);
   text-decoration: none;
-  color: black;
+  margin-left: 10px;
+  font-size: 20px;
 }
 
-.nav-right a:hover {
+.Nav-Right a:hover {
   text-decoration: underline;
+}
+
+.Title-Lockup{
+  text-align: center;
+  clear: both;
+  border-bottom: 5px solid white;
+}
+
+.Title-Lockup h1{
+  font-size: 75px;
+  letter-spacing: 0.1em;
+}
+
+/* Currently not being used */
+.Title-Border{
+  border-top: 5px solid white;
+  border-bottom:5px solid white;
+}
+
+.UTS-Kicker{
+  font-size: 40px;
+  margin-top: -40px;
+}
+
+.Kicker{
+  font-size: 35px;
+  margin-top: 10px;
+  letter-spacing: 0.1em;
 }

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { Navbar, Jumbotron, Button } from 'react-bootstrap';
 import logo from './logo.svg';
 import './App.css';
 import Header from './header/Header';
+import Footer from './footer/Footer';
 
 class App extends Component {
   render() {
@@ -9,12 +11,9 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React Seb</h2>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
         <Header />
+        <Footer />
       </div>
     );
   }
