@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import logo from '../logo.svg';
 
 export default class Navigation extends React.Component {
 
@@ -11,7 +12,7 @@ render() {
         <Navbar.Header>
           <Navbar.Toggle />
           <Navbar.Brand>
-            <p>PAAS</p>
+            <img src={logo} className="App-logo" alt="logo" />
           </Navbar.Brand>
         </Navbar.Header>
         <Navbar.Collapse>

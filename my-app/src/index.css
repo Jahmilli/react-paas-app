@@ -33,3 +33,53 @@ header {
   margin-top: 10px;
   letter-spacing: 0.1em;
 }
+
+.Social-Media h3{
+  text-align: center;
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.Media-Icon{
+  fill: rgba(255,255,255,0.7);
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+  transition: all 0.4s;
+}
+
+.Media-Icon:hover{
+  fill: rgba(255,255,255,1);
+  transform: scale(1.5);
+}
+
+
+.Section-Title{
+  text-align: center;
+  font-size: 40px;
+  clear: both;
+  display: block;
+}
+
+.Section-Info {
+  font-size: 18px;
+  margin: 0px 200px;
+  margin-top: 50px;
+}
+
+button{
+  height: 40px;
+  width: 150px;
+  background-color: rgba(255,255,255,1);
+  border: 2px solid black;
+  border-radius: 4px;
+  color: black;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+button:hover{
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  cursor: pointer;
+}
