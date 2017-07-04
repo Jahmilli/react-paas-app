@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
+import ContainedElement from './ContainedElement';
+import DeskPicture from '../images/deskpicture.jpg';
 
 
 export default class About extends Component {
   render() {
     return (
-      <div>
+      <div className="Section-Info">
         <h2 className="Section-Title">{this.props.children}</h2>
-        <p className="Section-Info">
+        <p>
         The Professional Aeronautics and Astronautics Society (PAAS UTS) is a student-run organisation working in collaboration with the AIAA.
         <br /> <br />
         The AIAA is the largest technical society devoted to the progress of engineering and science in aviation and space.
@@ -16,6 +18,10 @@ export default class About extends Component {
         </p>
         <br />
         <button type="button">Meet the Crew!</button>
+        <ContainedElement photo={DeskPicture} text="2016 Space Panel Night"/>
+        <ContainedElement photo={DeskPicture} text="2016 Space Panel Night"/>
+        <ContainedElement photo={DeskPicture} text="2016 Space Panel Night"/>
+
       </div>
     );
   }

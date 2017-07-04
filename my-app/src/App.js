@@ -13,7 +13,6 @@ class App extends Component {
       <div className="App">
         <Header />
         <Info />
-        <ExecutiveInfo />
         <Footer />
       </div>
     );

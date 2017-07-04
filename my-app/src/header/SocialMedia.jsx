@@ -7,9 +7,9 @@ export default class SocialMedia extends Component {
   render() {
     return (
     <div className="Social-Media">
-      <h3><Twitter className="Media-Icon"/></h3>
-      <h3><Facebook className="Media-Icon"/></h3>
-      <h3><Linkedin className="Media-Icon"/></h3>
+      <a href = "#"><Twitter className="Media-Icon"/></a>
+      <a href="#"><Facebook className="Media-Icon"/></a>
+      <a href="#"><Linkedin className="Media-Icon"/></a>
     </div>
     );
   }

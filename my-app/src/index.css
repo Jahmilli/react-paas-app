@@ -10,37 +10,37 @@ header {
   background-position: center center;
 }
 
-.Title-Lockup{
+.Title-Lockup {
   text-align: center;
   clear: both;
-  border-bottom: 5px dotted white;
+  border-bottom: 5px solid white;
   color: white;
 }
 
-.Title-Lockup h1{
+.Title-Lockup h1 {
   font-size: 75px;
   letter-spacing: 0.1em;
   padding-top: 100px;
 }
 
-.UTS-Kicker{
+.UTS-Kicker {
   font-size: 40px;
   margin-top: 20px;
 }
 
-.Kicker{
+.Kicker {
   font-size: 35px;
   margin-top: 10px;
   letter-spacing: 0.1em;
 }
 
-.Social-Media h3{
+.Social-Media a {
   text-align: center;
   display: inline-block;
   margin-top: 50px;
 }
 
-.Media-Icon{
+.Media-Icon {
   fill: rgba(255,255,255,0.7);
   height: 50px;
   width: 50px;
@@ -48,13 +48,12 @@ header {
   transition: all 0.4s;
 }
 
-.Media-Icon:hover{
+.Media-Icon:hover {
   fill: rgba(255,255,255,1);
   transform: scale(1.5);
 }
 
-
-.Section-Title{
+.Section-Title {
   text-align: center;
   font-size: 40px;
   clear: both;
@@ -63,11 +62,11 @@ header {
 
 .Section-Info {
   font-size: 18px;
-  margin: 0px 200px;
-  margin-top: 50px;
+  margin: 50px 200px;
+  text-align: center;
 }
 
-button{
+.Section-Info button {
   height: 40px;
   width: 150px;
   background-color: rgba(255,255,255,1);
@@ -76,10 +75,25 @@ button{
   color: black;
   font-size: 15px;
   transition: 0.4s;
+  display: block;
 }
 
-button:hover{
+.Section-Info button:hover {
   background-color: rgba(0,0,0,0.8);
   color: white;
   cursor: pointer;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+}
+
+.ContainedElement {
+  width: 250px;
+  height: 300px;
+  border: 2px solid black;
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
 }
