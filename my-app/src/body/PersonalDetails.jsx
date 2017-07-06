@@ -6,7 +6,7 @@ export default class PersonalDetails extends Component {
       <div>
         <h2> {this.props.title} </h2>
         <p> {this.props.info} </p>
-        <img alt="Display Picture" src={this.props.photo} />
+        <img alt="Hello" src={this.props.photo} />
 
       </div>
     );

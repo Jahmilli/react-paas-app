@@ -6,7 +6,7 @@ export default class ContainedElement extends Component {
   render() {
     return (
         <div className="ContainedElement">
-          <img src={this.props.photo} />
+          <img alt="Display" src={this.props.photo} />
           <h2>{this.props.text}</h2>
           <p>Learn More <Arrow /> </p>
         </div>
