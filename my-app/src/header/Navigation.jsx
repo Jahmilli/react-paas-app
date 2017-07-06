@@ -6,7 +6,7 @@ export default class Navigation extends React.Component {
 
 render() {
   return (
-  <Navbar >
+  <Navbar inverse>
         <Navbar.Header>
           <Navbar.Toggle />
           <Navbar.Brand>
