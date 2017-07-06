@@ -7,7 +7,7 @@ import DeskPicture from '../images/deskpicture.jpg';
 export default class About extends Component {
   render() {
     return (
-      <div className="Section-Info">
+    <div className="container Section-Info">
         <h2 className="Section-Title">{this.props.children}</h2>
         <p>
         The Professional Aeronautics and Astronautics Society (PAAS UTS) is a student-run organisation working in collaboration with the AIAA.
@@ -18,10 +18,17 @@ export default class About extends Component {
         </p>
         <br />
         <button type="button">Meet the Crew!</button>
-        <ContainedElement photo={DeskPicture} text="2016 Space Panel Night"/>
-        <ContainedElement photo={DeskPicture} text="2016 Space Panel Night"/>
-        <ContainedElement photo={DeskPicture} text="2016 Space Panel Night"/>
-
+        <div className="row">
+          <div className="col-sm-4">
+            <ContainedElement photo={DeskPicture} text="2016 Space Panel Night"/>
+          </div>
+          <div className="col-sm-4">
+            <ContainedElement photo={DeskPicture} text="2016 Space Panel Night"/>
+          </div>
+          <div className="col-sm-4">
+            <ContainedElement photo={DeskPicture} text="2016 Space Panel Night"/>
+          </div>
+        </div>
       </div>
     );
   }

@@ -8,11 +8,15 @@ export default class Header extends Component {
 
   render() {
     return (
-      <header>
-      <Navigation />
-        <Title>Professional Aeronautics and Astronautics Society</Title>
-        <SocialMedia />
-      </header>
+      <div className="container-fluid">
+      <div className="row">
+        <div id="Header-Lockup">
+          <Navigation />
+            <Title />
+            <SocialMedia />
+        </div>
+        </div>
+      </div>
     );
   }
 }

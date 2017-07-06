@@ -4,11 +4,9 @@ import logo from '../logo.svg';
 
 export default class Navigation extends React.Component {
 
-
 render() {
-
   return (
-  <Navbar inverse>
+  <Navbar >
         <Navbar.Header>
           <Navbar.Toggle />
           <Navbar.Brand>

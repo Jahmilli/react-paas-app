@@ -6,10 +6,12 @@ import Linkedin from 'react-icons/lib/fa/linkedin-square';
 export default class SocialMedia extends Component {
   render() {
     return (
+    <div className="container-fluid">
     <div className="Social-Media">
       <a href = "#"><Twitter className="Media-Icon"/></a>
       <a href="#"><Facebook className="Media-Icon"/></a>
       <a href="#"><Linkedin className="Media-Icon"/></a>
+    </div>
     </div>
     );
   }
