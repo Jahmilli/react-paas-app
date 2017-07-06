@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
 import ContainedElement from './ContainedElement';
 import DeskPicture from '../images/deskpicture.jpg';
+import Picture from '../images/space_panel_night_1.jpg';
 
 
 export default class About extends Component {
@@ -18,6 +19,9 @@ export default class About extends Component {
         </p>
         <br />
         <button type="button">Become a member!</button>
+        <div className="Carousel">
+          <img src={Picture} />
+        </div>
         <div className="row">
           <div className="col-sm-4">
             <ContainedElement photo={DeskPicture} text="2016 Space Panel Night"/>

@@ -61,7 +61,17 @@ body {
 .Section-Info {
   font-size: 15px;
   text-align: center;
+}
 
+.Carousel {
+  margin-top: 20px;
+  display: block;
+}
+
+.Carousel img {
+    height: 60%;
+    width: 80%;
+    margin-top: 20px;
 }
 
 .Section-Info button {
@@ -95,5 +105,5 @@ img {
 }
 
 .ContainedElement p {
-
+text-align: left;
 }
