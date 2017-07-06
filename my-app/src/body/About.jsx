@@ -17,7 +17,7 @@ export default class About extends Component {
         We act as an open door to professional activities, recognition, and contacts that would otherwise be unavailable to students.
         </p>
         <br />
-        <button type="button">Meet the Crew!</button>
+        <button type="button">Become a member!</button>
         <div className="row">
           <div className="col-sm-4">
             <ContainedElement photo={DeskPicture} text="2016 Space Panel Night"/>
