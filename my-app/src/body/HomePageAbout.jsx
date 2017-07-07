@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Button } from 'react-bootstrap';
 import ContainedElement from './ContainedElement';
 import DeskPicture from '../images/deskpicture.jpg';
 import Picture from '../images/space_panel_night_1.jpg';

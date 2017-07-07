@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Header from './header/Header';
+import Home from './pages/Home';
 import Footer from './footer/Footer';
-import Info from './body/Info';
-import ExecutiveInfo from './body/ExecutiveInfo';
-import { HashRouter, Route, Router } from 'react-router-dom';
+import Navigation from './header/Navigation';
+import About from './pages/About';
+import { HashRouter, Route } from 'react-router-dom';
 
 
 class App extends Component {
@@ -13,8 +12,9 @@ class App extends Component {
     return (
       <HashRouter>
         <div className="App">
-          <Header />
-          <Route path='/info' component={Info} />
+          <Navigation />
+          <Route path='/home' component={Home} />
+          <Route path='/about' component={About} />
           <Footer />
         </div>
       </HashRouter>

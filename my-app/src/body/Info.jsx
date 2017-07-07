@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import About from './About';
+import HomePageAbout from './HomePageAbout';
 
 export default class extends Component {
   render() {
     return(
       <div>
-        <About>About</About>
+        <HomePageAbout>About</HomePageAbout>
       </div>
     );
   }

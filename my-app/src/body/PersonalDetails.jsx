@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 export default class PersonalDetails extends Component {
   render() {
     return (
-      <div>
-        <h2> {this.props.title} </h2>
+      <div className="PersonalDetails">
+        <h3> {this.props.title} </h3>
         <p> {this.props.info} </p>
-        <img alt="Hello" src={this.props.photo} />
+        <img className="ProfilePicture" alt="Hello" src={this.props.photo} />
 
       </div>
     );
