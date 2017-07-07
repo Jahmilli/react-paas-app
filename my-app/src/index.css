@@ -1,5 +1,14 @@
-
 body {
+
+}
+
+.Navbar {
+  padding: 0px;
+  margin: 0px;
+
+}
+.Seb {
+    background-color: red;
 }
 
 #Header-Lockup {
@@ -22,12 +31,10 @@ body {
 
 .UTS-Kicker {
   font-size: 30px;
-  margin-top: 20px;
 }
 
 .Kicker {
   font-size: 35px;
-  margin-top: 10px;
   letter-spacing: 0.1em;
 }
 
@@ -69,9 +76,9 @@ body {
 }
 
 .Carousel img {
-    height: 60%;
-    width: 80%;
-    margin-top: 20px;
+  height: 60%;
+  width: 80%;
+  margin-top: 20px;
 }
 
 .Section-Info button {
@@ -93,11 +100,6 @@ body {
   cursor: pointer;
 }
 
-img {
-  height: 150px;
-  width: 150px;
-}
-
 .ContainedElement {
   box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.6);
   padding: 15px;
@@ -105,14 +107,13 @@ img {
 }
 
 .ContainedElement p {
-text-align: left;
+  text-align: left;
 }
 
-.Executive-Photos {
-
+.ContainedElement img {
+  height: 150px;
+  width: 150px;
 }
-
-
 
 .ProfilePicture {
   height: 100%;
@@ -120,5 +121,11 @@ text-align: left;
 }
 
 .PersonalDetails {
+  text-align: center;
+}
+
+.PersonalDetails img {
 
 }
+
+/* About Section */
