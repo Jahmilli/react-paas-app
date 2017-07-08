@@ -19,7 +19,6 @@ class App extends Component {
           <Route path='/about' component={About} />
           <Route path='/events' component={Events} />
           <Route path='/contact' component={Contact} />
-          <Footer />
         </div>
       </HashRouter>
     );

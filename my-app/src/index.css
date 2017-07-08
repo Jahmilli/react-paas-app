@@ -7,8 +7,10 @@ body {
   margin: 0px;
 
 }
-.Seb {
-    background-color: red;
+
+.HrStyle {
+  width: 75%;
+  border-top: 1px solid rgba(0,0,0,0.4);
 }
 
 #Header-Lockup {
@@ -129,3 +131,11 @@ body {
 }
 
 /* About Section */
+
+.PartnershipDetails img {
+
+}
+
+.PartnershipDetails p {
+  margin-top: 15px;
+}

@@ -9,7 +9,7 @@ export default class Footer extends React.Component {
 
 render() {
   return (
-    <Navbar fixedBottom style={{marginBottom: "0"}}>
+    <Navbar style={{marginBottom: "0px"}}>
       <Navbar.Header>
         <Navbar.Toggle />
           <Navbar.Brand>
@@ -17,7 +17,7 @@ render() {
           </Navbar.Brand>
         </Navbar.Header>
         <Navbar.Collapse>
-          <Nav pullCenter>
+          <Nav pullRight>
             <LinkContainer to="/home">
               <NavItem eventKey={1}>Home</NavItem>
             </LinkContainer>
