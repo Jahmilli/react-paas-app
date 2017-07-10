@@ -132,10 +132,19 @@ body {
 
 /* About Section */
 
-.PartnershipDetails img {
+.About p {
+  padding: 0% 15%;
+}
 
+.PartnershipDetails img {
+  height: 50%;
+  width: 50%;
 }
 
 .PartnershipDetails p {
   margin-top: 15px;
+}
+
+.PresidentMessage p{
+  text-align: left;
 }

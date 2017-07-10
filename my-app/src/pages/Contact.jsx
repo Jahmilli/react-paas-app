@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import ContactForm from '../body/ContactForm';
 
 export default class Contact extends Component {
   render() {
     return (
-      <h1>Contact Page</h1>
+      <div className="container-fluid">
+        <h1>Contact Page</h1>
+        <ContactForm />
+      </div>
     );
   }
 }

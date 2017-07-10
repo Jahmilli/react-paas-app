@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ContainedElement from './ContainedElement';
 import DeskPicture from '../images/deskpicture.jpg';
 import Picture from '../images/space_panel_night_1.jpg';
-
+import { Col } from 'react-bootstrap';
 
 export default class About extends Component {
   render() {
@@ -22,15 +22,15 @@ export default class About extends Component {
           <img src={Picture} />
         </div>
         <div className="row">
-          <div className="col-sm-4">
+          <Col sm={4}>
             <ContainedElement photo={DeskPicture} text="2016 Space Panel Night"/>
-          </div>
-          <div className="col-sm-4">
+          </Col>
+          <Col sm={4}>
             <ContainedElement photo={DeskPicture} text="2016 Space Panel Night"/>
-          </div>
-          <div className="col-sm-4">
+          </Col>
+          <Col sm={4}>
             <ContainedElement photo={DeskPicture} text="2016 Space Panel Night"/>
-          </div>
+          </Col>
         </div>
       </div>
     );
