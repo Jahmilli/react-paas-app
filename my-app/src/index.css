@@ -1,5 +1,6 @@
 body {
-
+  margin: 0px;
+  padding: 0px;
 }
 
 .Black {
@@ -149,6 +150,19 @@ body {
   margin-top: 15px;
 }
 
-.PresidentMessage p{
+.PresidentMessage p {
   text-align: left;
+}
+
+
+/* Events Page */
+.EventsPage h1 {
+  color: black;
+  float: left;
+  position: relative;
+}
+.EventsPage img {
+  height: auto;
+  width: 100%;
+  display: inline-block;
 }

@@ -25,9 +25,21 @@ render() {
             <LinkContainer to="/about">
               <NavItem eventKey={2}>About</NavItem>
             </LinkContainer>
-            <LinkContainer to="/events">
-              <NavItem eventKey={3}>Events</NavItem>
-            </LinkContainer>
+            <NavDropdown key={2} title="Events" id="events-dropdown">
+          <LinkContainer to={{ pathname: '/events' }}>
+            <MenuItem eventKey={2.1}>Events</MenuItem>
+          </LinkContainer>
+          <LinkContainer to={{ pathname: '/upcoming-events' }}>
+            <MenuItem eventKey={2.2}>Upcoming Events</MenuItem>
+          </LinkContainer>
+          <LinkContainer to={{ pathname: '/past-events' }}>
+            <MenuItem eventKey={2.3}>Past Events</MenuItem>
+          </LinkContainer>
+          <MenuItem divider />
+          <LinkContainer to={{ pathname: '/contact' }}>
+            <MenuItem eventKey={2.4}>Contact</MenuItem>
+          </LinkContainer>
+        </NavDropdown>
             <LinkContainer to="/contact">
               <NavItem eventKey={4}>Contact</NavItem>
             </LinkContainer>
