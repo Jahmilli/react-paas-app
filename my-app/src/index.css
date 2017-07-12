@@ -157,14 +157,24 @@ body {
 
 /* Events Page */
 .EventsPage {
-  height: 1000px;
+  height: 1500px;
 }
 
 .EventPageSpotlightImg {
-  height: 250px;
+  height: 400px;
 }
 
 .EventPageSpotlightImg h1 {
   color: white;
-  text-align: left;
+}
+
+.EventPageLink {
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+}
+
+.EventPageLink:hover {
+  color: white;
+  text-decoration: underline;
 }

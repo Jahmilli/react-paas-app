@@ -3,14 +3,15 @@ import UpComingEvents from '../body/UpComingEvents';
 import PastEvents from '../body/PastEvents';
 import EventInfo from '../body/EventInfo';
 import DeskPicture from '../images/deskpicture.jpg';
+import Gavan from '../images/space_panel_night_gavan.jpg';
+import Elon from '../images/iac_2016_elon_musk.jpg';
 
 export default class Event extends Component {
   render() {
     return (
       <div className="EventsPage">
-        <h1>Event Page</h1>
-        <UpComingEvents eventsPhoto={DeskPicture}/>
-        <PastEvents eventsPhoto={DeskPicture}/>
+        <UpComingEvents eventsPhoto={Elon}/>
+        <PastEvents eventsPhoto={Gavan}/>
         <EventInfo eventsPhoto={DeskPicture}/>
       </div>
     );

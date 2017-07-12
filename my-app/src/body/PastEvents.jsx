@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { Parallax } from 'react-parallax';
-
+import { Link } from 'react-router-dom';
 
 export default class PastEvents extends Component {
   render() {
     return (
       <div>
-        <Parallax className="EventPageSpotlightImg" bgImage={this.props.eventsPhoto} strength={400}>
+        <Parallax className="EventPageSpotlightImg" bgImage={this.props.eventsPhoto} strength={300}>
         <br/>
-        <h1> Past Events </h1>
+        <Link className="EventPageLink" to="/past-events"> Past Events </Link>
         </Parallax>
       </div>
     );
