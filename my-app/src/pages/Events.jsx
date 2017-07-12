@@ -11,7 +11,7 @@ export default class Event extends Component {
         <h1>Event Page</h1>
         <UpComingEvents eventsPhoto={DeskPicture}/>
         <PastEvents eventsPhoto={DeskPicture}/>
-        <EventInfo />
+        <EventInfo eventsPhoto={DeskPicture}/>
       </div>
     );
   }
