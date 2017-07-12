@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { FormGroup, ControlLabel, FormControl, HelpBlock, Button, Col } from 'react-bootstrap';
+import isEmail from 'validator/lib/isEmail';
 
 
 export default class ContactForm extends Component {
@@ -18,7 +19,6 @@ export default class ContactForm extends Component {
   this.setState({
         [event.target.id]: event.target.value,
       });
-  console.log(this.state.email + ' ' + this.state.firstName + ' ' + this.state.lastName + ' ' + this.state.message);
   }
 
   handleSubmit = (event) => {
@@ -26,6 +26,11 @@ export default class ContactForm extends Component {
   }
 
   getEmailValidationState = (event) => {
+    let email = this.state.email;
+    if(!isEmail(email)) {
+    console.log('not an email');
+    }
+
   }
 
   getFirstNameValidationState = (event) => {
@@ -42,6 +47,7 @@ export default class ContactForm extends Component {
   render() {
     return (
     <div className="row">
+    <h3>Email us with any inquiries</h3>
     <Col md={4} mdOffset={4}>
     <form className="form-signin" onSubmit={this.handleSubmit}>
       <FormGroup controlId="email" validationState={this.getEmailValidationState()}>
@@ -51,14 +57,12 @@ export default class ContactForm extends Component {
       </FormGroup>
 
       <FormGroup controlId="firstName" validationState={this.getFirstNameValidationState()}>
-        <ControlLabel srOnly>Email address</ControlLabel>
-        <FormControl type="email" value={this.state.firstName} placeholder="First Name" onChange={this.handleChange} />
+        <FormControl type="text" value={this.state.firstName} placeholder="First Name" onChange={this.handleChange} />
         <FormControl.Feedback />
       </FormGroup>
 
       <FormGroup controlId="lastName" validationState={this.getLastNameValidationState()}>
-        <ControlLabel srOnly>Email address</ControlLabel>
-        <FormControl type="email" value={this.state.lastName} placeholder="Last Name" onChange={this.handleChange} />
+        <FormControl type="text" value={this.state.lastName} placeholder="Last Name" onChange={this.handleChange} />
         <FormControl.Feedback />
       </FormGroup>
 

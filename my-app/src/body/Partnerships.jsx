@@ -8,7 +8,7 @@ export default class Partnerships extends Component {
     return (
       <div className="container-fluid">
         <h2>Partners</h2>
-        <PartnershipDetails partnerName="BLUESat"
+        <PartnershipDetails partnerName="BLUESat UNSW"
         partnerLogo={BlueSatLogo}
         partnerInfo="BLUEsat UNSW is a student space society,
          with a mission to give students real-world experience in multi-disciplinary space engineering projects, and promote space technology in Australia."/>

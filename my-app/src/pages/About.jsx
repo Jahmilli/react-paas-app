@@ -8,6 +8,7 @@ export default class Home extends Component {
     return (
       <div className="About">
         <PresidentMessage />
+        <hr className="HrStyle"/>
         <ExecutiveInfo />
         <hr className="HrStyle"/>
         <Partnerships />

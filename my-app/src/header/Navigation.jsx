@@ -2,15 +2,15 @@ import React from 'react';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
-import { bootstrapUtils } from 'react-bootstrap/lib/utils';
-
+import bUtils from 'react-bootstrap/lib/utils/bootstrapUtils';
 import logo from '../logo.svg';
+
 
 export default class Navigation extends React.Component {
 
 render() {
   return (
-    <Navbar staticTop inverse style={{marginBottom: "0"}}>
+    <Navbar staticTop inverse style={{marginBottom: "0px"}}>
       <Navbar.Header>
         <Navbar.Toggle />
           <Navbar.Brand>
