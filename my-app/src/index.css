@@ -156,13 +156,15 @@ body {
 
 
 /* Events Page */
-.EventsPage h1 {
-  color: black;
-  float: left;
-  position: relative;
+.EventsPage {
+  height: 1000px;
 }
-.EventsPage img {
-  height: auto;
-  width: 100%;
-  display: inline-block;
+
+.EventPageSpotlightImg {
+  height: 250px;
+}
+
+.EventPageSpotlightImg h1 {
+  color: white;
+  text-align: left;
 }

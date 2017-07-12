@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
+import { Parallax } from 'react-parallax';
+
 
 export default class PastEvents extends Component {
   render() {
     return (
       <div>
-        <h1>Past Event</h1>
-        <img src={this.props.eventsPhoto} alt="Events Photo" />
+        <Parallax className="EventPageSpotlightImg" bgImage={this.props.eventsPhoto} strength={400}>
+        <br/>
+        <h1> Past Events </h1>
+        </Parallax>
       </div>
     );
   }
