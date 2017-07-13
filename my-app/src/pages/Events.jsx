@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import UpComingEvents from '../body/UpComingEvents';
+import FutureEvents from '../body/FutureEvents';
 import PastEvents from '../body/PastEvents';
 import EventInfo from '../body/EventInfo';
 import DeskPicture from '../images/deskpicture.jpg';
@@ -10,7 +10,7 @@ export default class Event extends Component {
   render() {
     return (
       <div className="EventsPage">
-        <UpComingEvents eventsPhoto={Elon}/>
+        <FutureEvents eventsPhoto={Elon}/>
         <PastEvents eventsPhoto={Gavan}/>
         <EventInfo eventsPhoto={DeskPicture}/>
       </div>

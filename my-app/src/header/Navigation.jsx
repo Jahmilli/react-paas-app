@@ -29,8 +29,8 @@ render() {
           <LinkContainer to={{ pathname: '/events' }}>
             <MenuItem eventKey={2.1}>Events</MenuItem>
           </LinkContainer>
-          <LinkContainer to={{ pathname: '/upcoming-events' }}>
-            <MenuItem eventKey={2.2}>Upcoming Events</MenuItem>
+          <LinkContainer to={{ pathname: '/future-events' }}>
+            <MenuItem eventKey={2.2}>Future Events</MenuItem>
           </LinkContainer>
           <LinkContainer to={{ pathname: '/past-events' }}>
             <MenuItem eventKey={2.3}>Past Events</MenuItem>

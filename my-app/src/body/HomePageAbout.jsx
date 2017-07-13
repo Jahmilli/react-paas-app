@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import ContainedElement from './ContainedElement';
 import DeskPicture from '../images/deskpicture.jpg';
-import Picture from '../images/space_panel_night_1.jpg';
+import CarouselComponent from './CarouselComponent';
+
+import SebSpacePanel from '../images/space_panel_night_1.jpg';
+import Gavan from '../images/space_panel_night_gavan.jpg';
+
+
 import { Col } from 'react-bootstrap';
 
 export default class About extends Component {
@@ -18,18 +23,16 @@ export default class About extends Component {
         </p>
         <br />
         <button type="button">Become a member!</button>
-        <div className="Carousel">
-          <img src={Picture} />
-        </div>
+        <CarouselComponent photo1={SebSpacePanel} photo2={Gavan} photo3={SebSpacePanel} photo4={Gavan}/>
         <div className="row">
           <Col sm={4}>
-            <ContainedElement photo={DeskPicture} text="2016 Space Panel Night"/>
+            <ContainedElement photo={DeskPicture} title="2016 Space Panel Night" description="This is a description of the event" />
           </Col>
           <Col sm={4}>
-            <ContainedElement photo={DeskPicture} text="2016 Space Panel Night"/>
+            <ContainedElement photo={DeskPicture} title="2016 Space Panel Night" description="This is a description of the event" />
           </Col>
           <Col sm={4}>
-            <ContainedElement photo={DeskPicture} text="2016 Space Panel Night"/>
+            <ContainedElement photo={DeskPicture} title="2016 Space Panel Night" description="This is a description of the event" />
           </Col>
         </div>
       </div>
