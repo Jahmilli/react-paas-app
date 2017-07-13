@@ -7,10 +7,10 @@ export default class SocialMedia extends Component {
   render() {
     return (
     <div className="container-fluid">
-    <div className="Social-Media">
-      <a href = "#"><Twitter className="Media-Icon"/></a>
-      <a href="#"><Facebook className="Media-Icon"/></a>
-      <a href="#"><Linkedin className="Media-Icon"/></a>
+    <div className={this.props.styleName}>
+      <a href = "#"><Twitter className={this.props.mediaClass}/></a>
+      <a href="#"><Facebook className={this.props.mediaClass}/></a>
+      <a href="#"><Linkedin className={this.props.mediaClass}/></a>
     </div>
     </div>
     );

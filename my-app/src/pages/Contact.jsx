@@ -8,10 +8,8 @@ export default class Contact extends Component {
       <div className="container-fluid">
         <h1>Contact Page</h1>
         <ContactForm />
-        <div className="Black">
-        <p>Find us at</p>
-        <SocialMedia />
-        </div>
+        <p>Also find us at</p>
+        <SocialMedia styleName="Contact-Social-Media" mediaClass="Contact-Media-Icon"/>
       </div>
     );
   }

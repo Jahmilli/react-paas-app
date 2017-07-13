@@ -10,7 +10,7 @@ render() {
       <div className="row">
         <div id="Header-Lockup">
           <Title />
-          <SocialMedia />
+          <SocialMedia styleName="Header-Social-Media" mediaClass="Header-Media-Icon"/>
         </div>
       </div>
     </div>
