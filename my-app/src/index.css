@@ -182,9 +182,23 @@ body {
   text-decoration: none;
   font-size: 36px;
   color: white;
+  padding: 10px;
 }
 
 .EventPageLink:hover {
   color: white;
-  text-decoration: underline;
+  text-decoration: none;
+  border: 2px solid white;
+  background-color: rgba(0,0,0,0.4);
+
+
+
+}
+/* Contact Page */
+.ContactPage {
+
+}
+
+.Contact-Social-Media-Lockup {
+  margin-top: 30px;
 }
