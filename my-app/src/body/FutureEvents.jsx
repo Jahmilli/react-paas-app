@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Col } from 'react-bootstrap';
-import DeskPicture from '../images/deskpicture.jpg';
 import { Parallax } from 'react-parallax';
 import { Link } from 'react-router-dom';
 
@@ -11,7 +10,7 @@ export default class FutureEvents extends Component {
       <div>
         <Parallax className="EventPageSpotlightImg" bgImage={this.props.eventsPhoto} strength={400}>
         <br/>
-        <Link className="EventPageLink" to='/upcoming-events'> Up Coming Events </Link>
+        <h2>Future Events</h2>
         </Parallax>
       </div>
     );

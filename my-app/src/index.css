@@ -56,12 +56,15 @@ body {
 }
 
 .Header-Media-Icon {
-  fill: rgba(255,255,255,0.7);
+  fill: rgba(255, 255, 255,0.5);
   height: 50px;
   width: 50px;
   margin-left: 10px;
   margin-bottom: 20px;
   transition: all 0.4s;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 0;
+  padding: 6px;
 }
 
 .Contact-Media-Icon {
@@ -71,16 +74,22 @@ body {
   margin-left: 10px;
   margin-bottom: 20px;
   transition: all 0.4s;
+  border: 2px solid rgba(0,0,0,0.5);
+  border-radius: 0;
 }
 
 .Header-Media-Icon:hover {
-  fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255,1);
   transform: scale(1.5);
+  border: 2px solid rgba(255,255,255,1);
+
 }
 
 .Contact-Media-Icon:hover {
   fill: rgba(0,0,0,1);
   transform: scale(1.5);
+  border: 2px solid rgba(0,0,0,1);
+
 }
 
 
@@ -167,32 +176,35 @@ body {
 
 /* Events Page */
 .EventsPage {
-  height: 1500px;
+
 }
 
 .EventPageSpotlightImg {
   height: 500px;
 }
 
-.EventPageSpotlightImg h1 {
-  color: white;
-}
-
-.EventPageLink {
-  text-decoration: none;
+.EventPageSpotlightImg h2 {
   font-size: 36px;
   color: white;
   padding: 10px;
+  text-decoration: none;
+  border: 2px solid white;
+  background-color: rgba(0,0,0,0.4);
+  display: inline;
+}
+
+.EventPageLink {
+  font-size: 36px;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border: 2px solid white;
+  background-color: rgba(0,0,0,0.4);
 }
 
 .EventPageLink:hover {
   color: white;
   text-decoration: none;
-  border: 2px solid white;
-  background-color: rgba(0,0,0,0.4);
-
-
-
 }
 /* Contact Page */
 .ContactPage {

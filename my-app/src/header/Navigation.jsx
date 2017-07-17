@@ -36,8 +36,8 @@ render() {
             <MenuItem eventKey={2.3}>Past Events</MenuItem>
           </LinkContainer>
           <MenuItem divider />
-          <LinkContainer to={{ pathname: '/contact' }}>
-            <MenuItem eventKey={2.4}>Contact</MenuItem>
+          <LinkContainer to={{ pathname: '/gallery' }}>
+            <MenuItem eventKey={2.4}>Gallery</MenuItem>
           </LinkContainer>
         </NavDropdown>
             <LinkContainer to="/contact">

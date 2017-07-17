@@ -8,7 +8,7 @@ export default class PastEvents extends Component {
       <div>
         <Parallax className="EventPageSpotlightImg" bgImage={this.props.eventsPhoto} strength={300}>
         <br/>
-        <Link className="EventPageLink" to="/past-events"> Past Events </Link>
+        <h2>Past Events</h2>
         </Parallax>
       </div>
     );
