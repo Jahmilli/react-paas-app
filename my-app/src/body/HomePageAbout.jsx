@@ -22,7 +22,7 @@ export default class About extends Component {
         We act as an open door to professional activities, recognition, and contacts that would otherwise be unavailable to students.
         </p>
         <br />
-        <button type="button">Become a member!</button>
+        <a className="MembershipLink" href="https://utspaasmembership.getqpay.com/" target="_blank"><button type="button">Become a member!</button></a>
         <CarouselComponent photo1={SebSpacePanel} photo2={Gavan} photo3={SebSpacePanel} photo4={Gavan}/>
         <div className="row">
           <Col sm={4}>
