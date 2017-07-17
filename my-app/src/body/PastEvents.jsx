@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Parallax } from 'react-parallax';
-import { Link } from 'react-router-dom';
 
 export default class PastEvents extends Component {
   render() {
