@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import DeskPicture from '../images/deskpicture.jpg';
-import Gallery from '../body/Gallery';
+import PhotoGallery from '../body/PhotoGallery';
 
 export default class GalleryPage extends Component {
   render() {
     return (
       <div className="EventsPage">
-        <Gallery eventsPhoto={DeskPicture}/>
+        <PhotoGallery eventsPhoto={DeskPicture}/>
       </div>
     );
   }

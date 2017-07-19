@@ -200,6 +200,17 @@ body {
   color: white;
   text-decoration: none;
 }
+
+.GalleryImageLockup {
+  margin-bottom: 25px;
+}
+
+.GalleryImage {
+  height: 200px;
+  width: 300px;
+}
+
+
 /* Contact Page */
 .ContactPage {
 
