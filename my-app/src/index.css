@@ -59,8 +59,6 @@ body {
   margin-left: 10px;
   margin-bottom: 20px;
   transition: all 0.4s;
-  border: 2px solid rgba(255,255,255,0.5);
-  border-radius: 0;
 }
 
 .Contact-Media-Icon {
@@ -70,21 +68,17 @@ body {
   margin-left: 10px;
   margin-bottom: 20px;
   transition: all 0.4s;
-  border: 2px solid rgba(0,0,0,0.5);
-  border-radius: 0;
 }
 
 .Header-Media-Icon:hover {
   fill: rgba(255, 255, 255,1);
   transform: scale(1.5);
-  border: 2px solid rgba(255,255,255,1);
 
 }
 
 .Contact-Media-Icon:hover {
   fill: rgba(0,0,0,1);
   transform: scale(1.5);
-  border: 2px solid rgba(0,0,0,1);
 
 }
 
