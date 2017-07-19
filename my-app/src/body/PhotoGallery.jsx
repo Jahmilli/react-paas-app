@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Col } from 'react-bootstrap';
 
-import GalleryThumbnail from './GalleryThumbnail';
 import ContainedElement from './ContainedElement';
 
 export default class PhotoGallery extends Component {
@@ -21,13 +20,17 @@ renderPhotos() {
   ];
 
   return PHOTOLIST.map(x => {
+  var index = 0;
     return (
     <Col className="GalleryImageLockup" md={3} style={{height: "200"}}>
-      <img className="GalleryImage" src={x.url} alt="Gallery Image" />
+      <img key={index} className="GalleryImage" src={x.url} alt="Gallery Image" />
     </Col>
     );
+    index++;
   });
 }
+
+
   render() {
     return (
       <div className="container-fluid">
