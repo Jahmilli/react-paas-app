@@ -10,7 +10,7 @@ export default class Navigation extends React.Component {
 
 render() {
   return (
-    <Navbar staticTop style={{marginBottom: "0px"}}>
+    <Navbar  inverse style={{marginBottom: "0px"}}>
       <Navbar.Header>
         <Navbar.Toggle />
           <Navbar.Brand>
