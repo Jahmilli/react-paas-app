@@ -109,7 +109,7 @@ body {
 .Section-Info button {
   height: 50px;
   width: 190px;
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255,255,255,0);
   border: 2px solid black;
   border-radius: 4px;
   color: black;
@@ -121,7 +121,7 @@ body {
 }
 
 .Section-Info button:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.9);
   color: white;
   cursor: pointer;
 }
