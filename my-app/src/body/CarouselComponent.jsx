@@ -3,12 +3,9 @@ import { Carousel } from 'react-bootstrap'
 
 
 export default class CarouselComponent extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {carouselItems: []};
-  }
 
 
+  
 
   render() {
     return (

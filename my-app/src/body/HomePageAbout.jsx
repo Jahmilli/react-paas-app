@@ -13,7 +13,7 @@ import { Col } from 'react-bootstrap';
 export default class About extends Component {
   render() {
     return (
-    <div className="container Section-Info">
+      <div className="container-fluid Section-Info">
         <h2 className="Section-Title">{this.props.children}</h2>
         <p>
         The Professional Aeronautics and Astronautics Society (PAAS UTS) is a student-run organisation working in collaboration with the AIAA.
@@ -24,7 +24,6 @@ export default class About extends Component {
         </p>
         <br />
         <a className="MembershipLink" href="https://utspaasmembership.getqpay.com/" target="_blank"><button type="button">Become a member!</button></a>
-
 
         <CarouselComponent
         photo1={SebSpacePanel} heading1="Space Panel" description1="This is a description"
