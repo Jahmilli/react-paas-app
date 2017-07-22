@@ -30,4 +30,5 @@ To add new thumbnails down the bottom <Col><ContainedElement photo={Example} tit
 About Page
 -The about page is rendered from the './pages/About';
 -Changing President message just go into the President Message Component and change the text :)
--If you want to add a new Executive Component that includes the image and text, go into the '/body/ExecutiveInfo' page and add <Col md={2}><PersonalDetails /></Col> and pass in first, last, info and photo as props. To edit it, just change what is passed in. 
+-If you want to add a new Executive Component that includes the image and text, go into the '/body/ExecutiveInfo' page and add <Col md={2}><PersonalDetails /></Col> and pass in first, last, info and photo as props. To edit it, just change what is passed in.
+-To change any of the partners or add new ones go to '/body/Partnerships' and you can either add a new <PartnershipDetails /> Component with partnerName, partnerLogo and partnerInfo being passed in as props or change the existing text.

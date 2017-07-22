@@ -24,7 +24,15 @@ export default class About extends Component {
         </p>
         <br />
         <a className="MembershipLink" href="https://utspaasmembership.getqpay.com/" target="_blank"><button type="button">Become a member!</button></a>
-        <CarouselComponent photo1={SebSpacePanel} photo2={Gavan} photo3={SebSpacePanel} photo4={Gavan}/>
+
+
+        <CarouselComponent
+        photo1={SebSpacePanel} heading1="Space Panel" description1="This is a description"
+        photo2={Gavan} heading2="Gavan!" description2="This is a description"
+        photo3={SebSpacePanel} heading3="Space Panel" description3="This is a description"
+        photo4={Gavan} heading4="Gavan4!!!!" description4="This is a description" />
+
+
         <div className="row">
           <Col sm={4}>
             <ContainedElement photo={DeskPicture} title="2016 Space Panel Night" description="This is a description of the event"/>
