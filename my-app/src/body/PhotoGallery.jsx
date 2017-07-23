@@ -31,9 +31,9 @@ renderPhotos() {
   return PHOTOLIST.map(x => {
   var index = 0;
     return (
-    <Col className="GalleryImageLockup" md={3} style={{height: "200"}}>
+    <div className="GalleryImageLockup">
       <img key={index} className="GalleryImage" src={x.url} alt="Gallery Image" />
-    </Col>
+    </div>
     );
     index++;
   });
@@ -44,7 +44,7 @@ renderPhotos() {
     return (
       <div className="container-fluid">
         <h2>Photo Gallery</h2>
-        <div className="row">
+        <div>
           {this.renderPhotos()}
         </div>
       </div>

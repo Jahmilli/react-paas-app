@@ -223,12 +223,14 @@ body {
 }
 
 .GalleryImageLockup {
-  margin-bottom: 25px;
+  display: inline-block;
+  margin: 5px;
 }
 
 .GalleryImage {
   height: 200px;
   width: 300px;
+  border-radius: 2% 0;
 }
 
 
