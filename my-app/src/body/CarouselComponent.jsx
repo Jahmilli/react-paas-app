@@ -13,14 +13,15 @@ export default class CarouselComponent extends Component {
   ];
 
   return LIST.map(items => {
+
   var index = 0;
     return (
     <Carousel.Item className="CarouselComponent">
       <img width={1000} height={500} alt="900x500" src={items.photo}/>
       <Carousel.Caption>
-        <h3>{items.heading}</h3>
+        <h1>{items.heading}</h1>
         <p>{items.description}</p>
-        <a href={items.url} target="_blank">Check it out</a>
+        {this.isLink(items.url)}
       </Carousel.Caption>
     </Carousel.Item>
     );
@@ -28,6 +29,15 @@ export default class CarouselComponent extends Component {
   });
 
   }
+
+  isLink(url) {
+    if(!url) {
+      return '';
+    } else {
+      return <a className="CarouselLink" href={url} target="_blank">Check it out</a>
+    }
+  }
+
 
 
   render() {
