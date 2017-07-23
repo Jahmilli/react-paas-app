@@ -184,7 +184,6 @@ body {
   color: white;
 }
 
-
 /* Events Page */
 .EventsPage {
 
@@ -229,7 +228,7 @@ body {
 
 .GalleryImage {
   height: 200px;
-  width: 300px;
+  width: 200px;
   border-radius: 2% 0;
 }
 
