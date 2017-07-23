@@ -34,7 +34,7 @@ export default class Event extends Component {
            ullum alienum ne mel. Vis dolorum luptatum iracundia ad, per ut choro accumsan repudiare.
 
       </p>
-      </div>
+      </div>           
         <Parallax className="EventPageSpotlightImg" bgImage={Elon} strength={200}>
         <br/>
         <Link className="EventPageLink" to='/future-events'> Future Events </Link>
