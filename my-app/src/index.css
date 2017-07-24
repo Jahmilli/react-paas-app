@@ -126,6 +126,21 @@ body {
   cursor: pointer;
 }
 
+.CarouselComponent img {
+  height: 600px;
+  width: 100%;
+}
+
+.CarouselLink {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.CarouselLink:hover {
+  color: white;
+}
+
 .ContainedElement {
   box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.6);
   padding: 15px;
@@ -169,20 +184,6 @@ body {
   text-align: left;
 }
 
-.CarouselComponent img {
-  height: 600px;
-  width: 100%;
-}
-
-.CarouselLink {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-}
-
-.CarouselLink:hover {
-  color: white;
-}
 
 /* Events Page */
 .EventsPage {
@@ -228,9 +229,32 @@ body {
 
 .GalleryImage {
   height: 200px;
-  width: 200px;
-  border-radius: 2% 0;
+  width: 300px;
 }
+.GalleryImageLeft {
+  height: 200px;
+  width: 200px;
+}
+
+.CarouselComponentGallery {
+  top: 100px;
+}
+
+.PhotoGalleryCarousel img {
+  height: 500px;
+  width: 600px;
+}
+
+.CarouselItem {
+  height: 400px;
+}
+
+@media only screen and (max-width: 500px) {
+  .CarouselItem {
+    height: 200px;
+  }
+}
+
 
 
 /* Contact Page */
