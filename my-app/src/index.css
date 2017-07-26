@@ -1,7 +1,6 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-color: #eee;
 }
 
 .Navbar {
@@ -121,7 +120,7 @@ body {
 }
 
 .Section-Info button:hover {
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0,0,0,0.8);
   color: white;
   cursor: pointer;
 }
@@ -191,7 +190,7 @@ body {
 }
 
 .EventPageSpotlightImg {
-  height: 400px;
+  height: 600px;
   text-align: center;
 }
 
@@ -213,7 +212,7 @@ body {
   text-decoration: none;
   border: 2px solid white;
   background-color: rgba(0,0,0,0.4);
-  margin-top: 200px;
+  margin-top: 250px;
   display: inline-block;
 }
 
@@ -231,18 +230,22 @@ body {
   height: 200px;
   width: 300px;
 }
+
 .GalleryImageLeft {
   height: 200px;
   width: 200px;
+  box-sizing: border-box;
 }
+
+.GalleryImageLeft:hover {
+  cursor: pointer;
+  border: 1px solid rgba(0,0,0,0.8);
+
+}
+
 
 .CarouselComponentGallery {
   top: 100px;
-}
-
-.PhotoGalleryCarousel img {
-  height: 500px;
-  width: 600px;
 }
 
 .CarouselItem {

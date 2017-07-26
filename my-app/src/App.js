@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import Home from './pages/Home';
+import Home from './pages/HomePage';
 import Footer from './footer/Footer';
 import Navigation from './header/Navigation';
-import About from './pages/About';
-import Events from './pages/Events';
-import Contact from './pages/Contact';
+import About from './pages/AboutPage';
+import Events from './pages/EventsPage';
+import Contact from './pages/ContactPage';
 import FutureEvents from './pages/FutureEventsPage';
 import PastEvents from './pages/PastEventsPage';
 import GalleryPage from './pages/GalleryPage';
