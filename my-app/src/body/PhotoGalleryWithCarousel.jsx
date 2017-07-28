@@ -17,12 +17,16 @@ const PHOTOLIST = [
 
 
 export default class PhotoGalleryWithCarousel extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {carouselImage: 'https://scontent-syd2-1.xx.fbcdn.net/v/t31.0-8/19780611_1573388502705170_135582896334775158_o.jpg?oh=90d3dab781173876d83cce2ef3572fbc&oe=5A02981B'}
+  }
 
   renderPhotos() {
     return PHOTOLIST.map((x, index) => {
       return (
-      <div className="GalleryImageLockup">
-        <img key={index} className="GalleryImageLeft" src={x.url} alt="Gallery Image" />
+      <div key={index} style={{backgroundImage: `url(${x.url})`}} className="GalleryImageLeft" onClick={() => this.handleImageChange(x.url)}>
       </div>
       );
     });
@@ -41,6 +45,17 @@ export default class PhotoGalleryWithCarousel extends Component {
     });
   }
 
+  renderFadeCarousel() {
+    return (
+      <div style={{backgroundImage: `url(${this.state.carouselImage})`}} className="CarouselFade" >
+      </div>
+    );
+  }
+
+  handleImageChange(image) {
+    this.setState({carouselImage: image})
+  }
+
 
   render() {
     return (
@@ -51,9 +66,7 @@ export default class PhotoGalleryWithCarousel extends Component {
             {this.renderPhotos()}
           </Col>
           <Col md={6}>
-          <Carousel className="CarouselComponentGallery">
-            {this.renderCarouselList()}
-          </Carousel>
+            {this.renderFadeCarousel()}
           </Col>
         </div>
       </div>

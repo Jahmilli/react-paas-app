@@ -57,10 +57,6 @@ body {
   margin-top: 50px;
 }
 
-.Contact-Social-Media a {
-
-}
-
 .Header-Media-Icon {
   fill: rgba(255, 255, 255,0.5);
   height: 50px;
@@ -70,23 +66,8 @@ body {
   transition: all 0.4s;
 }
 
-.Contact-Media-Icon {
-  fill: rgba(0,0,0,0.7);
-  height: 50px;
-  width: 50px;
-  margin-left: 10px;
-  margin-bottom: 20px;
-  transition: all 0.4s;
-}
-
 .Header-Media-Icon:hover {
   fill: rgba(255, 255, 255,1);
-  transform: scale(1.5);
-
-}
-
-.Contact-Media-Icon:hover {
-  fill: rgba(0,0,0,1);
   transform: scale(1.5);
 
 }
@@ -193,6 +174,8 @@ body {
   height: 600px;
   text-align: center;
   transition: 1s ease;
+  transform: scale(1.03);
+  overflow: hidden;
 }
 
 .EventPageSpotlightImg h2 {
@@ -205,7 +188,6 @@ body {
   background-color: rgba(0,0,0,0.4);
   display: inline-block;
 }
-
 
 .EventPageLink {
   position: relative;
@@ -224,12 +206,6 @@ body {
   text-decoration: none;
   border: 2px solid rgba(255,255,255,0.8);
   background-color: rgba(0,0,0,0.4);
-  overflow: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-
-
-
-
 }
 
 .EventPageLink:hover {
@@ -240,13 +216,21 @@ body {
 
 .EventPageLink:hover + .EventPageSpotlightImg {
   filter: blur(3px);
-
-
 }
+
+/* Gallery */
 
 .GalleryImageLockup {
   display: inline-block;
   margin: 5px;
+}
+.GalleryImageLeft {
+  display: inline-block;
+  margin: 5px;
+  height: 200px;
+  width: 200px;
+  background-position: center;
+  background-size: cover;
 }
 
 .GalleryImage {
@@ -254,11 +238,6 @@ body {
   width: 300px;
 }
 
-.GalleryImageLeft {
-  height: 200px;
-  width: 200px;
-  box-sizing: border-box;
-}
 
 .GalleryImageLeft:hover {
   cursor: pointer;
@@ -266,13 +245,21 @@ body {
 
 }
 
-
 .CarouselComponentGallery {
   top: 100px;
 }
 
 .CarouselItem {
   height: 400px;
+}
+
+.CarouselFade {
+  top: 200px;
+  height: 400px;
+  width: 600px;
+  display: inline-block;
+  background-size: cover;
+  transition: 1s ease-in-out
 }
 
 @media only screen and (max-width: 500px) {
@@ -290,4 +277,24 @@ body {
 
 .Contact-Social-Media-Lockup {
   margin-top: 30px;
+}
+
+.Contact-Social-Media a {
+
+}
+
+.Contact-Media-Icon {
+  fill: rgba(0,0,0,0.7);
+  height: 50px;
+  width: 50px;
+  margin-bottom: 20px;
+  transition: all 0.4s;
+  text-align: center;
+
+}
+
+.Contact-Media-Icon:hover {
+  fill: rgba(0,0,0,1);
+  transform: scale(1.5);
+
 }
