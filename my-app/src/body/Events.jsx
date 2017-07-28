@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import DeskPicture from '../images/deskpicture.jpg';
 import Gavan from '../images/space_panel_night_gavan.jpg';
 import Elon from '../images/iac_2016_elon_musk.jpg';
+
+import EventItem from './EventItem';
 import { Parallax } from 'react-parallax';
 import { Link } from 'react-router-dom';
 
@@ -35,10 +37,8 @@ export default class Event extends Component {
 
       </p>
       </div>
-        <Parallax className="EventPageSpotlightImg" bgImage={Elon} strength={200}>
-        <br/>
-        <Link className="EventPageLink" to='/future-events'> Future Events </Link>
-        </Parallax>
+        <EventItem background={Elon} eventLink="/future-events" eventTitle="Future Events" />
+
         <div className="container">
           <h2>Future Events Blah blah</h2>
           <p>Lorem ipsum dolor sit amet, no habeo insolens eos. Lorem iuvaret vim ea. Sed ei aliquam maluisset. Meis diceret cu cum, at liber harum has.
@@ -63,10 +63,7 @@ export default class Event extends Component {
            ullum alienum ne mel. Vis dolorum luptatum iracundia ad, per ut choro accumsan repudiare.
           </p>
         </div>
-        <Parallax className="EventPageSpotlightImg" bgImage={Gavan} strength={200}>
-        <br/>
-        <Link className="EventPageLink" to="/past-events"> Past Events </Link>
-        </Parallax>
+        <EventItem background={Gavan} eventLink="/past-events" eventTitle="Past Events" />
         <div className="container">
           <h2>Future Events Blah blah</h2>
           <p>Lorem ipsum dolor sit amet, no habeo insolens eos. Lorem iuvaret vim ea. Sed ei aliquam maluisset. Meis diceret cu cum, at liber harum has.
@@ -91,10 +88,7 @@ export default class Event extends Component {
            ullum alienum ne mel. Vis dolorum luptatum iracundia ad, per ut choro accumsan repudiare.
           </p>
         </div>
-        <Parallax className="EventPageSpotlightImg" bgImage={DeskPicture} strength={200}>
-        <br/>
-        <Link className="EventPageLink" to="/gallery"> Gallery </Link>
-        </Parallax>
+        <EventItem background={DeskPicture} eventLink="/gallery" eventTitle="Gallery" />
         <div className="container">
           <h2>Future Events Blah blah</h2>
           <p>Lorem ipsum dolor sit amet, no habeo insolens eos. Lorem iuvaret vim ea. Sed ei aliquam maluisset. Meis diceret cu cum, at liber harum has.

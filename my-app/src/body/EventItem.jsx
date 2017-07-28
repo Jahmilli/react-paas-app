@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
+import { Parallax } from 'react-parallax';
+import Elon from '../images/iac_2016_elon_musk.jpg';
+import { Link } from 'react-router-dom';
+
 
 export default class EventItem extends Component {
   render() {
     return(
-      <div className="container-fluid">
-        <h2>{this.props.eventTitle}</h2>
-        <img src={this.props.eventPhoto} alt="Event Photo" />
-        <p>{this.props.eventDescription}</p>
-      </div>
+    <div>
+    <Link className="EventPageLink" to={this.props.eventLink}>{this.props.eventTitle}</Link>
+    <Parallax className="EventPageSpotlightImg" bgImage={this.props.background} strength={200}>
+    <br/>
+    </Parallax>
+    </div>
     );
   }
 }
