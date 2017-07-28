@@ -20,34 +20,21 @@ export default class PhotoGalleryWithCarousel extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {carouselImage: 'https://scontent-syd2-1.xx.fbcdn.net/v/t31.0-8/19780611_1573388502705170_135582896334775158_o.jpg?oh=90d3dab781173876d83cce2ef3572fbc&oe=5A02981B'}
+    this.state = {carouselImage: 'https://scontent-syd2-1.xx.fbcdn.net/v/t31.0-8/18278600_1503656399678381_3480088402011775015_o.jpg?oh=066492ad23ab20bf98459aa279047982&oe=5A1141E8'}
   }
 
   renderPhotos() {
     return PHOTOLIST.map((x, index) => {
       return (
-      <div key={index} style={{backgroundImage: `url(${x.url})`}} className="GalleryImageLeft" onClick={() => this.handleImageChange(x.url)}>
-      </div>
+      <div key={index} style={{backgroundImage: `url(${x.url})`}} className="GalleryImageLeft" onClick={() => this.handleImageChange(x.url)} />
       );
     });
   }
 
 
-  renderCarouselList() {
-    return PHOTOLIST.map((items, index) => {
-      return (
-      <Carousel.Item className="CarouselItem">
-        <img key={index} alt="900x500" src={items.url}/>
-        <Carousel.Caption>
-        </Carousel.Caption>
-      </Carousel.Item>
-      );
-    });
-  }
-
-  renderFadeCarousel() {
+  renderCarousel() {
     return (
-      <div style={{backgroundImage: `url(${this.state.carouselImage})`}} className="CarouselFade" >
+      <div style={{backgroundImage: `url(${this.state.carouselImage})`}} className="GalleryCarousel" >
       </div>
     );
   }
@@ -66,7 +53,9 @@ export default class PhotoGalleryWithCarousel extends Component {
             {this.renderPhotos()}
           </Col>
           <Col md={6}>
-            {this.renderFadeCarousel()}
+            <div className="PhotoGalleryCarouselLockup">
+            {this.renderCarousel()}
+            </div>
           </Col>
         </div>
       </div>

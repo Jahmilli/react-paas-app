@@ -32,14 +32,8 @@ body {
   padding-top: 100px;
 }
 
-@media only screen and (max-width: 500px) {
-  .Title-Lockup h1 {
-    font-size: 35px;
-  }
-
   .Kicker {
     font-size: 20px;
-  }
 }
 
 .UTS-Kicker {
@@ -145,6 +139,12 @@ body {
 
 }
 
+@media only screen and (max-width: 500px) {
+  .Title-Lockup h1 {
+    font-size: 35px;
+  }
+}
+
 /* About Section */
 
 .About p {
@@ -164,6 +164,14 @@ body {
   text-align: left;
 }
 
+@media only screen and (max-width: 500px) {
+  .PartnershipDetails img {
+    height: 100%;
+    width: 100%;
+  }
+
+}
+
 
 /* Events Page */
 .EventsPage {
@@ -176,6 +184,7 @@ body {
   transition: 1s ease;
   transform: scale(1.03);
   overflow: hidden;
+  position: absolute;
 }
 
 .EventPageSpotlightImg h2 {
@@ -218,12 +227,23 @@ body {
   filter: blur(3px);
 }
 
+@media only screen and (max-width: 500px) {
+  .EventPageLink {
+    top: 100px;
+  }
+  .EventPageSpotlightImg {
+    height: 300px;
+  }
+}
 /* Gallery */
 
 .GalleryImageLockup {
   display: inline-block;
   margin: 5px;
 }
+.PhotoGalleryCarouselLockup {
+}
+
 .GalleryImageLeft {
   display: inline-block;
   margin: 5px;
@@ -242,33 +262,28 @@ body {
 .GalleryImageLeft:hover {
   cursor: pointer;
   border: 1px solid rgba(0,0,0,0.8);
-
 }
 
 .CarouselComponentGallery {
   top: 100px;
 }
 
-.CarouselItem {
-  height: 400px;
-}
 
-.CarouselFade {
-  top: 200px;
+.GalleryCarousel {
   height: 400px;
-  width: 600px;
+  width: 700px;
   display: inline-block;
   background-size: cover;
-  transition: 1s ease-in-out
+  transition: 1s ease-in-out;
+  margin-top: 100px;
 }
 
 @media only screen and (max-width: 500px) {
-  .CarouselItem {
+  .GalleryCarousel {
     height: 200px;
+    width: 300px;
   }
 }
-
-
 
 /* Contact Page */
 .ContactPage {
