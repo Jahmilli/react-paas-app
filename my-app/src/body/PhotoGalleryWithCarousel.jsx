@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Carousel, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import Facebook from 'react-icons/lib/fa/arrow-left';
 
 import ContainedElement from './ContainedElement';
 
@@ -47,7 +49,7 @@ export default class PhotoGalleryWithCarousel extends Component {
   render() {
     return (
       <div className="container-fluid">
-        <h2>Photo Gallery</h2>
+        <h2>Photo Gallery</h2><Link to='gallery'><Facebook className="Contact-Media-Icon" /></Link>
         <div className="row">
           <Col md={6}>
             {this.renderPhotos()}

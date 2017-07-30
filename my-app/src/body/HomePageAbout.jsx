@@ -13,7 +13,7 @@ import { Col } from 'react-bootstrap';
 export default class About extends Component {
   render() {
     return (
-      <div className="container Section-Info">
+      <div className="container-fluid Section-Info">
         <h2 className="Section-Title">About</h2>
         <p>
         The Professional Aeronautics and Astronautics Society (PAAS UTS) is a student-run organisation working in collaboration with the AIAA.

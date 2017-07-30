@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
 import ContainedElement from './ContainedElement';
 
 const PHOTOLIST = [
@@ -24,15 +26,16 @@ const PHOTOLIST = [
 ];
 
 
-export default class PhotoGalleryWithCarousel extends Component {
+export default class PhotoGallery extends Component {
 
 renderPhotos() {
-
   return PHOTOLIST.map(x => {
   var index = 0;
     return (
     <div className="GalleryImageLockup">
-      <img key={index} className="GalleryImage" src={x.url} alt="Gallery Image" />
+      <Link to='gallery-carousel'>
+        <img key={index} className="GalleryImage" src={x.url} alt="Gallery Image" />
+      </Link>
     </div>
     );
     index++;

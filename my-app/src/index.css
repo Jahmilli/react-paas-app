@@ -1,6 +1,8 @@
+
 body {
   margin: 0px;
   padding: 0px;
+
 }
 
 .Navbar {
@@ -215,11 +217,13 @@ body {
   text-decoration: none;
   border: 2px solid rgba(255,255,255,0.8);
   background-color: rgba(0,0,0,0.4);
+  transition: 0.5s ease-in-out;
 }
 
 .EventPageLink:hover {
   color: rgba(255,255,255,1);
   border: 2px solid rgba(255,255,255,1);
+  background-color: rgba(0,0,0,0.7);
   text-decoration: none;
 }
 

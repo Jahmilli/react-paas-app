@@ -8,7 +8,6 @@ export default class GalleryPage extends Component {
     return (
       <div className="EventsPage">
         <PhotoGallery />
-        <PhotoGalleryWithCarousel />
       </div>
     );
   }

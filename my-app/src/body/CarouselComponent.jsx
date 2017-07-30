@@ -12,9 +12,8 @@ export default class CarouselComponent extends Component {
     {photo: this.props.photo4, url: this.props.link4, heading: this.props.heading4, description: this.props.description4},
   ];
 
-  return LIST.map(items => {
+  return LIST.map((items, index) => {
 
-  var index = 0;
     return (
     <Carousel.Item className="CarouselComponent">
       <img width={1000} height={500} alt="900x500" src={items.photo}/>
@@ -25,7 +24,6 @@ export default class CarouselComponent extends Component {
       </Carousel.Caption>
     </Carousel.Item>
     );
-    index++;
   });
 
   }
