@@ -2,7 +2,7 @@
 body {
   margin: 0px;
   padding: 0px;
-
+  text-align: center;
 }
 
 .Navbar {
@@ -239,7 +239,7 @@ body {
   .EventPageSpotlightImg {
     height: 300px;
     transform: scale(1.2);
-    
+
   }
   .EventPageSpotlightImg h2 {
     margin-top: 100px;

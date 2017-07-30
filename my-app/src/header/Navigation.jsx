@@ -3,8 +3,6 @@ import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
 import bUtils from 'react-bootstrap/lib/utils/bootstrapUtils';
-import logo from '../logo.svg';
-
 
 export default class Navigation extends React.Component {
 
@@ -13,8 +11,7 @@ render() {
     <Navbar style={{marginBottom: "0px"}}>
       <Navbar.Header>
         <Navbar.Toggle />
-          <Navbar.Brand>
-            <Link to="/home"><img src={logo} className="App-logo" alt="logo" /></Link>
+          <Navbar.Brand>          
           </Navbar.Brand>
         </Navbar.Header>
         <Navbar.Collapse>
