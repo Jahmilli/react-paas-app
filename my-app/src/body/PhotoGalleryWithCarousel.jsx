@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { Carousel, Col } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Facebook from 'react-icons/lib/fa/arrow-left';
-
-import ContainedElement from './ContainedElement';
 
 const PHOTOLIST = [
   {url: "https://scontent-syd2-1.xx.fbcdn.net/v/t31.0-8/18278600_1503656399678381_3480088402011775015_o.jpg?oh=066492ad23ab20bf98459aa279047982&oe=5A1141E8"},

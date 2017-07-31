@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ContainedElement from './ContainedElement';
 import CarouselComponent from './CarouselComponent';
-import Arrow from 'react-icons/lib/fa/arrow-right';
 
 import DeskPicture from '../images/deskpicture.jpg';
 import SebSpacePanel from '../images/space_panel_night_1.jpg';

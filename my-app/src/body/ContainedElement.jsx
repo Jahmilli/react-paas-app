@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Arrow from 'react-icons/lib/fa/arrow-right';
-import { Button, Thumbnail } from 'react-bootstrap';
-
+import { Thumbnail } from 'react-bootstrap';
 
 export default class ContainedElement extends Component {
   render() {

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Home from './pages/HomePage';
-import Footer from './footer/Footer';
 import Navigation from './header/Navigation';
 import About from './pages/AboutPage';
 import Events from './pages/EventsPage';

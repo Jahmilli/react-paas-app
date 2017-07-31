@@ -1,8 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
-import bUtils from 'react-bootstrap/lib/utils/bootstrapUtils';
 
 export default class Navigation extends React.Component {
 
@@ -11,7 +9,7 @@ render() {
     <Navbar style={{marginBottom: "0px"}}>
       <Navbar.Header>
         <Navbar.Toggle />
-          <Navbar.Brand>          
+          <Navbar.Brand>
           </Navbar.Brand>
         </Navbar.Header>
         <Navbar.Collapse>

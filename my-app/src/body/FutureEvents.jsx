@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Parallax } from 'react-parallax';
-import EventItem from './EventItem';
 import CarouselComponent from './CarouselComponent';
 import IAC from '../images/IAC_Header.jpg';
 

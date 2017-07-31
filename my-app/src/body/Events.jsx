@@ -5,8 +5,7 @@ import Gavan from '../images/space_panel_night_gavan.jpg';
 import Elon from '../images/iac_2016_elon_musk.jpg';
 
 import EventItem from './EventItem';
-import { Parallax } from 'react-parallax';
-import { Link } from 'react-router-dom';
+
 
 export default class Event extends Component {
   render() {

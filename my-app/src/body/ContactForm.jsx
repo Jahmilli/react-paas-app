@@ -3,6 +3,10 @@ import { FormGroup, ControlLabel, FormControl, HelpBlock, Button, Col } from 're
 import isEmail from 'validator/lib/isEmail';
 
 
+
+
+
+
 export default class ContactForm extends Component {
   constructor() {
     super();
@@ -12,7 +16,6 @@ export default class ContactForm extends Component {
     lastName: '',
     message: ''
       };
-
   }
 
   handleChange = (event) => {
@@ -40,7 +43,6 @@ export default class ContactForm extends Component {
   getLastNameValidationState = (event) => {
 
   }
-
 
 
 
