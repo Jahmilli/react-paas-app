@@ -29,6 +29,36 @@ To add new thumbnails down the bottom <Col><ContainedElement photo={Example} tit
 
 About Page
 -The about page is rendered from the './pages/About';
+-Calls PresidentMessage, ExecutiveInfo and Partnerships
 -Changing President message just go into the President Message Component and change the text :)
 -If you want to add a new Executive Component that includes the image and text, go into the '/body/ExecutiveInfo' page and add <Col md={2}><PersonalDetails /></Col> and pass in first, last, info and photo as props. To edit it, just change what is passed in.
 -To change any of the partners or add new ones go to '/body/Partnerships' and you can either add a new <PartnershipDetails /> Component with partnerName, partnerLogo and partnerInfo being passed in as props or change the existing text.
+
+Events Page
+-Events page rendered from the './EventsPage';
+-Calls Events and in that you will be able to change any text for the main event page.
+-The css for Events page images is different depending whether you are on the main page or a separate page such as 'Past Events' or 'Future Events'. If you want to change the text or border on the main page you will have to change the Event Page Link where as in the separate pages you will have to change the 'EventPageSpotlightImg h2' css class.
+
+
+Future Events + Past Events Pages
+ISSUE:
+-Currently the carousel is changing height depending on the height of the image but only if it smaller than the max. This can be changed
+ however it might be worthwhile to keep it as it is....
+-Height of the image might need to be reduced
+
+
+-These pages are exactly identical in structure however changes need to be made to either './FutureEventsPage' or './PastEventsPage'
+ and then furthermore changes into their respective calling components ('FutureEvents'/'PastEvents').
+-Changes to the images are just changing the headings and photo props of the carousel components...
+
+
+Photo Gallery
+Styling fix:
+-In the gallery carousel page if you click on a photo the state is changed and the image will rerender. However there is room for
+ improvement in the way it rerenders which will likely just need some  basic styling changes in the 'PhotoGalleryCarouselLockup' css class.
+-Also make a change to the arrow image that is currently positioned underneath the text..
+
+
+Contact Page
+Issue:
+-The forms are working in regards to capturing and changing the state of the input, the email node js file has been completed but the implementation needs to be done correctly.

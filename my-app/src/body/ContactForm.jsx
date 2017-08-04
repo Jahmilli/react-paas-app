@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import { FormGroup, ControlLabel, FormControl, HelpBlock, Button, Col } from 'react-bootstrap';
 import isEmail from 'validator/lib/isEmail';
 
-
-
-
-
-
 export default class ContactForm extends Component {
   constructor() {
     super();
