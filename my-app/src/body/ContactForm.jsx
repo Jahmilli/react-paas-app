@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { FormGroup, ControlLabel, FormControl, HelpBlock, Button, Col } from 'react-bootstrap';
 import isEmail from 'validator/lib/isEmail';
 
+const URL = '/api/contact';
+
 export default class ContactForm extends Component {
   constructor() {
     super();
@@ -11,6 +13,27 @@ export default class ContactForm extends Component {
     lastName: '',
     message: ''
       };
+  }
+
+  _onPressButtonPOST() {
+  console.log(this.state);
+  console.log(URL);
+    fetch(URL, {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email: this.state.email,
+        firstName: this.state.firstName,
+        lastName: this.state.lastName,
+        message: this.state.message,
+      })
+    })
+      .catch((err) => {
+        alert('Error occured while trying to connect with the server');
+      });
   }
 
   handleChange = (event) => {
@@ -73,7 +96,7 @@ export default class ContactForm extends Component {
        />
       </FormGroup>
 
-      <Button type="submit" onClick={this.handleSubmit} bsSize="large" bsStyle="primary">
+      <Button type="submit" onClick={this._onPressButtonPOST.bind(this)} bsSize="large" bsStyle="primary">
         Send Message
       </Button>
     </form>

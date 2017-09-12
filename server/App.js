@@ -1,38 +1,54 @@
 var express = require('express');
 var nodemailer = require('nodemailer');
+var BodyParser = require('body-parser');
 
 var app = express();
 
+app.use(BodyParser.json());
 
-let transporter = nodemailer.createTransport({
-  service: 'gmail',
-  secure: false,
-  port: 25,
-  auth: {
-    user: 'sebastian.southern@gmail.com',
-    pass: 'sebastian97',
-  },
-  tls: {
-    rejectUnauthorised: false
-  }
+
+
+app.post("/api/contact", (req, res) => {
+  console.log(req.body);
+  var email = req.body.email;
+  var first = req.body.firstName;
+  var last = req.body.lastName;
+  var message = req.body.message;
+  sendEmail(email, first, last, message);
+
 });
 
-let HelperOptions = {
-  from: '"Sebastian Southern" <sebastian.southern@gmail.com>',
-  to: 'sebastian.southern@gmail.com',
-  subject: 'Test',
-  text: 'This is a test email using NODEjs',
-};
+function sendEmail(email, first, last, message) {
+  let transporter = nodemailer.createTransport({
+    service: 'gmail',
+    secure: false,
+    port: 25,
+    auth: {
+      user: '',
+      pass: '',
+    },
+    tls: {
+      rejectUnauthorised: false
+    }
+  });
 
-transporter.sendMail(HelperOptions, (err, info) => {
-  if(err) {
-    console.log(err);
-  }
-  console.log("Message was sent: ");
-  console.log(info);
+  let HelperOptions = {
+    from: `${first} ${last} <${email}>`,
+    to: 'sebastian.southern@gmail.com',
+    subject: 'Website Inquiry Message',
+    text: first + ' ' + last + '\n' + message,
+  };
 
-})
+  transporter.sendMail(HelperOptions, (err, info) => {
+    if(err) {
+      console.log(err);
+    }
+    console.log("Message was sent: ");
+    console.log(info);
 
-app.listen(3000, function() {
-  console.log('listening on port: 3000');
+  })
+}
+
+app.listen(3001, function() {
+  console.log('listening on port: 3001');
 })
