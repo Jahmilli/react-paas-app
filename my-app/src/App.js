@@ -8,6 +8,7 @@ import FutureEvents from './pages/FutureEventsPage';
 import PastEvents from './pages/PastEventsPage';
 import GalleryPage from './pages/GalleryPage';
 import PhotoGalleryWithCarousel from './body/PhotoGalleryWithCarousel';
+import Footer from './footer/Footer';
 import { HashRouter, Route } from 'react-router-dom';
 
 
@@ -25,6 +26,8 @@ class App extends Component {
           <Route path='/gallery' component={GalleryPage} />
           <Route path='/gallery-carousel' component={PhotoGalleryWithCarousel} />
           <Route path='/contact' component={Contact} />
+          <Footer />
+
         </div>
       </HashRouter>
     );

@@ -16,24 +16,26 @@ export default class ContactForm extends Component {
   }
 
   _onPressButtonPOST() {
-  console.log(this.state);
-  console.log(URL);
-    fetch(URL, {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        email: this.state.email,
-        firstName: this.state.firstName,
-        lastName: this.state.lastName,
-        message: this.state.message,
+    if(!this.getNameValidationState()) {
+      alert("Please Enter Correct Characters");
+    } else {
+      fetch(URL, {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: this.state.email,
+          firstName: this.state.firstName,
+          lastName: this.state.lastName,
+          message: this.state.message,
+        })
       })
-    })
-      .catch((err) => {
-        alert('Error occured while trying to connect with the server');
-      });
+        .catch((err) => {
+          alert('Error occured while trying to connect with the server');
+        });
+    }
   }
 
   handleChange = (event) => {
@@ -54,15 +56,9 @@ export default class ContactForm extends Component {
 
   }
 
-  getFirstNameValidationState = (event) => {
-
+  getNameValidationState() {
+    return (this.state.firstName.match(/[a-zA-Z]/g) && (this.state.lastName.match(/[a-zA-Z]/g)));
   }
-
-  getLastNameValidationState = (event) => {
-
-  }
-
-
 
   render() {
     return (
@@ -76,12 +72,12 @@ export default class ContactForm extends Component {
         <FormControl.Feedback />
       </FormGroup>
 
-      <FormGroup controlId="firstName" validationState={this.getFirstNameValidationState()}>
+      <FormGroup controlId="firstName">
         <FormControl type="text" value={this.state.firstName} placeholder="First Name" onChange={this.handleChange} />
         <FormControl.Feedback />
       </FormGroup>
 
-      <FormGroup controlId="lastName" validationState={this.getLastNameValidationState()}>
+      <FormGroup controlId="lastName">
         <FormControl type="text" value={this.state.lastName} placeholder="Last Name" onChange={this.handleChange} />
         <FormControl.Feedback />
       </FormGroup>

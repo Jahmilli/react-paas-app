@@ -347,3 +347,10 @@ body {
   transform: scale(1.4);
 
 }
+
+.Footer {
+  background-color: rgba(0,0,0,0.9);
+  color: white;
+  height: 250px;
+  position: static bottom;
+}

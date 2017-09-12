@@ -7,29 +7,9 @@ export default class Footer extends React.Component {
 
 render() {
   return (
-    <Navbar style={{marginBottom: "0px"}}>
-      <Navbar.Header>
-        <Navbar.Toggle />
-          <Navbar.Brand>
-          </Navbar.Brand>
-        </Navbar.Header>
-        <Navbar.Collapse>
-          <Nav pullRight>
-            <LinkContainer to="/home">
-              <NavItem eventKey={1}>Home</NavItem>
-            </LinkContainer>
-            <LinkContainer to="/about">
-              <NavItem eventKey={2}>About</NavItem>
-            </LinkContainer>
-            <LinkContainer to="/events">
-              <NavItem eventKey={3}>Events</NavItem>
-            </LinkContainer>
-            <LinkContainer to="/contact">
-              <NavItem eventKey={4}>Contact</NavItem>
-            </LinkContainer>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
+      <div className="Footer">
+        
+      </div>
     );
   }
 }
