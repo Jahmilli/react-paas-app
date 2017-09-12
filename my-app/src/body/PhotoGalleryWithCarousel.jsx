@@ -47,7 +47,7 @@ export default class PhotoGalleryWithCarousel extends Component {
   render() {
     return (
       <div className="container-fluid">
-        <h2>Photo Gallery</h2><Link to='gallery'><Facebook className="Contact-Media-Icon" /></Link>
+        <h2><Link to='gallery'><Facebook className="Previous-Page-Icon"/></Link>Photo Gallery</h2>
         <div className="row">
           <Col md={6}>
             {this.renderPhotos()}

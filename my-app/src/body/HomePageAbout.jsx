@@ -14,22 +14,24 @@ export default class About extends Component {
     return (
       <div className="container-fluid Section-Info">
         <h2 className="Section-Title">About</h2>
-        <p>
-        The Professional Aeronautics and Astronautics Society (PAAS UTS) is a student-run organisation working in collaboration with the AIAA.
-        <br /> <br />
-        The AIAA is the largest technical society devoted to the progress of engineering and science in aviation and space.
-        PAAS UTS is a pre-professional society to promote interest and encourage involvement in projects and activities in the fields of space and aerospace entrepreneurship, avionics, aeronautics, and astronautics.
-        We act as an open door to professional activities, recognition, and contacts that would otherwise be unavailable to students.
-        </p>
-        <br />
-        <a className="MembershipLink" href="https://utspaasmembership.getqpay.com/" target="_blank"><button type="button">Become a member!</button></a>
-
-        <CarouselComponent
-        photo1={SebSpacePanel} heading1="Space Panel" description1="This is a description"
-        photo2={Gavan} heading2="Gavan!" description2="This is a description"
-        photo3={SebSpacePanel} heading3="Space Panel" description3="This is a description"
-        photo4={Gavan} heading4="Gavan4!!!!" description4="This is a description" />
-
+        <div className="Home-About-Info">
+          <p>
+          The Professional Aeronautics and Astronautics Society (PAAS UTS) is a student-run organisation working in collaboration with the AIAA.
+          <br /> <br />
+          The AIAA is the largest technical society devoted to the progress of engineering and science in aviation and space.
+          PAAS UTS is a pre-professional society to promote interest and encourage involvement in projects and activities in the fields of space and aerospace entrepreneurship, avionics, aeronautics, and astronautics.
+          We act as an open door to professional activities, recognition, and contacts that would otherwise be unavailable to students.
+          </p>
+          <br />
+          <a className="MembershipLink" href="https://utspaasmembership.getqpay.com/" target="_blank"><button type="button">Become a member!</button></a>
+        </div>
+        <div className="Home-Page-Carousel">
+          <CarouselComponent
+          photo1={SebSpacePanel} heading1="Space Panel" description1="This is a description"
+          photo2={Gavan} heading2="Gavan!" description2="This is a description"
+          photo3={SebSpacePanel} heading3="Space Panel" description3="This is a description"
+          photo4={Gavan} heading4="Gavan4!!!!" description4="This is a description" />
+        </div>
 
         <div className="row">
           <Col sm={4}>

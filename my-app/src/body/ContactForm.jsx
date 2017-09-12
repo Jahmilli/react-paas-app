@@ -20,7 +20,7 @@ export default class ContactForm extends Component {
   }
 
   handleSubmit = (event) => {
-
+    console.log(this.state);
   }
 
   getEmailValidationState = (event) => {
@@ -74,7 +74,7 @@ export default class ContactForm extends Component {
       </FormGroup>
 
       <Button type="submit" onClick={this.handleSubmit} bsSize="large" bsStyle="primary">
-        Send Message :^)
+        Send Message
       </Button>
     </form>
     </Col>

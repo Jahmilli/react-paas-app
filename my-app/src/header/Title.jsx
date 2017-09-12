@@ -5,7 +5,7 @@ export default class Title extends React.Component {
     return (
     <div className="container-fluid">
       <div className="Title-Lockup">
-        <h1>UTS Professional Aeronautics & Astronautical Society</h1>
+        <h1>UTS Professional Aeronautics & Astronautics Society</h1>
         <p className="Kicker">Shaping the Future of Aerospace</p>
       </div>
       </div>

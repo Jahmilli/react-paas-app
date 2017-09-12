@@ -34,7 +34,7 @@ body {
   padding-top: 100px;
 }
 
-  .Kicker {
+.Kicker {
     font-size: 20px;
 }
 
@@ -76,6 +76,14 @@ body {
 .Section-Info {
   font-size: 15px;
   text-align: center;
+}
+
+.Home-About-Info {
+  padding: 0px 400px;
+}
+
+.Home-Page-Carousel {
+
 }
 
 .Section-Info a {
@@ -255,8 +263,7 @@ body {
   display: inline-block;
   margin: 5px;
 }
-.PhotoGalleryCarouselLockup {
-}
+
 
 .GalleryImageLeft {
   display: inline-block;
@@ -312,18 +319,31 @@ body {
 
 }
 
+.Previous-Page-Icon {
+  fill: rgba(0,0,0,0.7);
+  height: 50px;
+  width: 50px;
+  margin: 0px 20px 20px 0px;
+  transition: all 0.4s;
+  text-align: center;
+}
+
+.Previous-Page-Icon:hover {
+  fill: rgba(0,0,0,1);
+  transform: scale(1.2);
+}
+
 .Contact-Media-Icon {
   fill: rgba(0,0,0,0.7);
   height: 50px;
   width: 50px;
-  margin-bottom: 20px;
+  margin: 0px 10px 10px 0px;
   transition: all 0.4s;
   text-align: center;
-
 }
 
 .Contact-Media-Icon:hover {
   fill: rgba(0,0,0,1);
-  transform: scale(1.5);
+  transform: scale(1.4);
 
 }
