@@ -14,7 +14,7 @@ render() {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
-            <LinkContainer to="/home">
+            <LinkContainer exact={true} to="/">
               <NavItem eventKey={1}>Home</NavItem>
             </LinkContainer>
             <LinkContainer to="/about">

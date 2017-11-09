@@ -4,6 +4,14 @@ Useful Links:
 -https://github.com/facebookincubator/create-react-app
 -https://github.com/creationix/nvm#installation
 
+Tools used:
+ -ReactJS
+ -Node
+
+ Prerequisites:
+ -Node: (https://nodejs.org/en/download/)
+ -NPM (Packet Manager): (In terminal type npm install --save download documentation is at: https://www.npmjs.com/package/download)
+ -
 
 Running the Development sever:
 -If you have never run this before you will have to make sure you have Node Packet Manager on your computer the link to download it is here:
@@ -56,9 +64,7 @@ Photo Gallery
 Styling fix:
 -In the gallery carousel page if you click on a photo the state is changed and the image will rerender. However there is room for
  improvement in the way it rerenders which will likely just need some  basic styling changes in the 'PhotoGalleryCarouselLockup' css class.
--Also make a change to the arrow image that is currently positioned underneath the text..
 
 
 Contact Page
 Issue:
--The forms are working in regards to capturing and changing the state of the input, the email node js file has been completed but the implementation needs to be done correctly.

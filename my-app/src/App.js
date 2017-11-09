@@ -18,7 +18,7 @@ class App extends Component {
       <HashRouter>
         <div className="App">
           <Navigation />
-          <Route path='/home' component={Home} />
+          <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
           <Route path='/events' component={Events} />
           <Route path='/future-events' component={FutureEvents} />
