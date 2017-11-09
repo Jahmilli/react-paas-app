@@ -12,7 +12,7 @@ import { Col } from 'react-bootstrap';
 export default class About extends Component {
   render() {
     return (
-      <div className="container-fluid Section-Info">
+      <div className="container Section-Info">
         <h2 className="Section-Title">About</h2>
         <div className="Home-About-Info">
           <p>

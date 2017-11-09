@@ -24,8 +24,8 @@ function sendEmail(email, first, last, message) {
     secure: false,
     port: 25,
     auth: {
-      user: '',
-      pass: '',
+      user: process.env.USERNAME,
+      pass: process.env.PASSWORD,
     },
     tls: {
       rejectUnauthorised: false

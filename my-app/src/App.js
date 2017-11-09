@@ -27,7 +27,6 @@ class App extends Component {
           <Route path='/gallery-carousel' component={PhotoGalleryWithCarousel} />
           <Route path='/contact' component={Contact} />
           <Footer />
-
         </div>
       </HashRouter>
     );
