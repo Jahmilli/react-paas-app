@@ -1,8 +1,29 @@
 
+@font-face {
+  font-family: 'Moon';
+  src: url('css/Moon_Light.otf');
+  font-style: normal;
+  font-weight: 100;
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(35%);
+  }
+  100% {
+
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 body {
   margin: 0px;
   padding: 0px;
   text-align: center;
+  font-family: Moon;
 }
 
 .Navbar {
@@ -18,7 +39,7 @@ body {
 
 #Header-Lockup {
   background-image: url("./images/spacex-launch.jpg");
-  height: 95vh;
+  height: 94vh;
   background-size: cover;
   background-position: center center;
   text-align: center;
@@ -26,17 +47,20 @@ body {
 
 .Title-Lockup {
   color: white;
+  animation: 2s ease-out 0s 1 fadeIn;
 }
 
 .Title-Lockup h1 {
+  font-family: Moon;
   font-size: 60px;
   letter-spacing: 0.1em;
-  padding-top: 100px;
+  padding-top: 200px;
 
 }
 
 .Kicker {
-    font-size: 20px;
+  font-size: 20px;
+  font-family: Moon;
 }
 
 .UTS-Kicker {
@@ -46,27 +70,6 @@ body {
 .Kicker {
   font-size: 35px;
   letter-spacing: 0.1em;
-}
-
-.Header-Social-Media a {
-  text-align: center;
-  display: inline-block;
-  margin-top: 50px;
-}
-
-.Header-Media-Icon {
-  fill: rgba(255, 255, 255,0.5);
-  height: 50px;
-  width: 50px;
-  margin-left: 10px;
-  margin-bottom: 20px;
-  transition: all 0.4s;
-}
-
-.Header-Media-Icon:hover {
-  fill: rgba(255, 255, 255,1);
-  transform: scale(1.5);
-
 }
 
 .Section-Title {
@@ -97,7 +100,6 @@ body {
   width: 190px;
   background-color: rgba(255,255,255,0);
   border: 2px solid rgba(0,0,0,0.8);
-  border-radius: 4px;
   color: black;
   font-size: 17px;
   transition: 0.4s;
@@ -107,7 +109,7 @@ body {
 }
 
 .Section-Info button:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,1);
   color: white;
   cursor: pointer;
 }
@@ -159,11 +161,24 @@ body {
 
 .ExecutiveDescriptions {
   margin-top: 50px;
+  animation: 2s ease-out fadeIn;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
+  .Title-Lockup h1 {
+    font-size: 45px;
+    padding-top: 200px;
+  }
+
+  .Kicker {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
   .Title-Lockup h1 {
     font-size: 35px;
+    padding-top: 200px;
   }
 
   .Kicker {
