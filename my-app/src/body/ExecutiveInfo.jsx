@@ -6,9 +6,9 @@ import Logo from '../images/seb_paas_profile.jpg';
 import { Col } from 'react-bootstrap';
 
 export default class ExecutiveInfo extends Component {
+
   constructor(props) {
     super(props);
-
     this.state = {
       text: 'Click on the images to see a description!',
     }
@@ -51,7 +51,7 @@ onChangeLinkName(newName) {
           </Col>
         </div>
         <div className="row ExecutiveDescriptions">
-          <p>{this.state.text}</p>
+          <p className="ExecutiveDescriptions">{this.state.text}</p>
         </div>
       </div>
     );

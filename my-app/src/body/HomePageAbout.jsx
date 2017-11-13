@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ContainedElement from './ContainedElement';
 import CarouselComponent from './CarouselComponent';
+import ExternalLink from 'react-icons/lib/fa/external-link';
 
 import DeskPicture from '../images/deskpicture.jpg';
 import SebSpacePanel from '../images/space_panel_night_1.jpg';
@@ -21,9 +22,10 @@ export default class About extends Component {
           The AIAA is the largest technical society devoted to the progress of engineering and science in aviation and space.
           PAAS UTS is a pre-professional society to promote interest and encourage involvement in projects and activities in the fields of space and aerospace entrepreneurship, avionics, aeronautics, and astronautics.
           We act as an open door to professional activities, recognition, and contacts that would otherwise be unavailable to students.
+
           </p>
           <br />
-          <a className="MembershipLink" href="https://utspaasmembership.getqpay.com/" target="_blank"><button type="button">Become a member!</button></a>
+          <a className="MembershipLink" href="https://utspaasmembership.getqpay.com/" target="_blank"><button type="button"><ExternalLink /> Become a member!</button></a>
         </div>
         <div className="Home-Page-Carousel">
           <CarouselComponent
