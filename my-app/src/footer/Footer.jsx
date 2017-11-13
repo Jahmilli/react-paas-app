@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, FormControl, NavDropdown, MenuItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
 import SocialMedia from '../header/SocialMedia'
@@ -21,7 +21,9 @@ render() {
         </ul>
         <div className="FooterInputLockup">
           <p>Connect with us!</p>
-          <input type="text" placeholder="Input email" className="FooterInput" />
+          <div className="FooterInput">
+            <FormControl style={{textAlign: 'center'}} type="text" placeholder="Email" />
+          </div>
         </div>
       </div>
     );

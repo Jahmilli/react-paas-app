@@ -374,7 +374,7 @@ body {
   fill: rgba(0,0,0,0.7);
   height: 50px;
   width: 50px;
-  margin: 0px 10px 0px 10px;
+  margin: 0px 10px 20px 10px;
   transition: all 0.4s;
   text-align: center;
 }
@@ -397,7 +397,7 @@ body {
 }
 
 .FooterMediaIcons {
-  fill: white;
+  fill: rgba(255,255,255,0.7);
   height: 50px;
   width: 50px;
   transition: all 0.4s;
@@ -406,6 +406,7 @@ body {
 
 .FooterMediaIcons:hover {
   transform: scale(1.2);
+  fill: white;
 }
 
 .FooterNavigationList {
@@ -424,6 +425,5 @@ body {
 
 .FooterInput {
   display: inline-block;
-  text-align: center;
-  color: black;
+  width: 250px;
 }
