@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Title from './Title';
-import SocialMedia from './SocialMedia';
 
 export default class Header extends Component {
 

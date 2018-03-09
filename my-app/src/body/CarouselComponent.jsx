@@ -15,7 +15,7 @@ export default class CarouselComponent extends Component {
   return LIST.map((items, index) => {
     return (
     <Carousel.Item className="CarouselComponent">
-      <img width={1000} height={500} alt="900x500" src={items.photo}/>
+      <img width={500} height={500} alt="900x500" src={items.photo}/>
       <Carousel.Caption>
         <h1>{items.heading}</h1>
         <p>{items.description}</p>

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Navbar, Nav, NavItem, FormControl, NavDropdown, MenuItem } from 'react-bootstrap';
+import { FormControl } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { LinkContainer } from 'react-router-bootstrap';
+
 import SocialMedia from '../header/SocialMedia'
 
 export default class Footer extends React.Component {
@@ -11,16 +11,16 @@ render() {
       <div className="Footer">
         <SocialMedia styleName="FooterMediaIconsLockup" mediaClass="FooterMediaIcons" />
         <ul className="FooterNavigationList">
-          <li>Home</li>
+          <li classNam="FooterNavLink"><Link to="/" className="FooterNavLink">Home</Link></li>
           <li> | </li>
-          <li>About</li>
+          <li><Link to="/about" className="FooterNavLink">About</Link></li>
           <li> | </li>
-          <li>Events</li>
+          <li><Link to="/events" className="FooterNavLink">Events</Link></li>
           <li> | </li>
-          <li>Contact</li>
+          <li><Link to="/contact" className="FooterNavLink">Contact</Link></li>
         </ul>
         <div className="FooterInputLockup">
-          <p>Connect with us!</p>
+          <p id="FooterConnectText">Connect with us!</p>
           <div className="FooterInput">
             <FormControl style={{textAlign: 'center'}} type="text" placeholder="Email" />
           </div>

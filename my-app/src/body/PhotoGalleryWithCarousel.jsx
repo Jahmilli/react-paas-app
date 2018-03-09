@@ -19,7 +19,6 @@ const PHOTOLIST = [
 export default class PhotoGalleryWithCarousel extends Component {
   constructor(props) {
     super(props);
-
     this.state = {carouselImage: 'https://scontent-syd2-1.xx.fbcdn.net/v/t31.0-8/18278600_1503656399678381_3480088402011775015_o.jpg?oh=066492ad23ab20bf98459aa279047982&oe=5A1141E8'}
   }
 

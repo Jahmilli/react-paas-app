@@ -24,8 +24,8 @@ const PHOTOLIST = [
 
 export default class PhotoGallery extends Component {
 renderPhotos() {
-  return PHOTOLIST.map(x => {
-  var index = 0;
+  return PHOTOLIST.map((x, index) => {
+
     return (
     <div className="GalleryImageLockup">
       <Link to='gallery-carousel'>
@@ -33,7 +33,6 @@ renderPhotos() {
       </Link>
     </div>
     );
-    index++;
   });
 }
 

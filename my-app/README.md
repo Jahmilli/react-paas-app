@@ -7,17 +7,18 @@ Useful Links:
 Tools used:
  -ReactJS
  -Node
+ -CreateReactApp
 
  Prerequisites:
  -Node: (https://nodejs.org/en/download/)
  -NPM (Packet Manager): (In terminal type npm install --save download documentation is at: https://www.npmjs.com/package/download)
- -
+ 
 
 Running the Development sever:
--If you have never run this before you will have to make sure you have Node Packet Manager on your computer the link to download it is here:
+-If you have never run this before you will have to make sure you have NPM on your computer.
 -In order to run the site in development mode you need to change to the directory containing all the files in terminal.
 -You will then need to type 'npm install' to install all the dependencies if you have not previously run this before.
--You will then need to type 'npm run start' in the terminal and this will run the development server with a live update.
+-You will then need to type 'npm run start' in the terminal and this will run the development server with hot reloading.
 -Example setup on Macbook with the app saved onto desktop
   - cd desktop
   - cd react-paas-app

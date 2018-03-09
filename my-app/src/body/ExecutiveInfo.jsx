@@ -47,7 +47,7 @@ onChangeLinkName(newName) {
             <PersonalDetails changeLink={(newName) => this.onChangeLinkName(newName)} first="Benny" last="Suryadi" info="Executive" photo={Logo}></PersonalDetails>
           </Col>
           <Col md={2}>
-            <PersonalDetails changeLink={(newName) => this.onChangeLinkName(newName)} first="Argie" last="Alaso" info="Executive" photo={Logo}></PersonalDetails>
+            <PersonalDetails changeLink={(newName) => this.onChangeLinkName(newName)} first="Argie" last="Alaso" info="Executive" description="H Y P E M A N" photo={Logo}></PersonalDetails>
           </Col>
         </div>
         <div className="row ExecutiveDescriptions">

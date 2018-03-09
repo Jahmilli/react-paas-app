@@ -7,10 +7,22 @@
 
 }
 
-@keyframes fadeIn {
+@keyframes TitleFadeIn {
   0% {
     opacity: 0;
     transform: translateY(35%);
+  }
+  100% {
+
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes KickerFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
   }
   100% {
 
@@ -47,7 +59,6 @@ body {
 
 .Title-Lockup {
   color: white;
-  animation: 2s ease-out 0s 1 fadeIn;
 }
 
 .Title-Lockup h1 {
@@ -55,22 +66,18 @@ body {
   font-size: 60px;
   letter-spacing: 0.1em;
   padding-top: 200px;
-
+  animation: 2s ease-out 0s 1 TitleFadeIn;
 }
 
 .Kicker {
-  font-size: 20px;
-  font-family: Moon;
-}
-
-.UTS-Kicker {
   font-size: 30px;
-}
-
-.Kicker {
-  font-size: 35px;
+  font-family: Moon;
+  animation: 2s ease-out 0s 1 KickerFadeIn;
+  margin-top: 80px;
   letter-spacing: 0.1em;
 }
+
+
 
 .Section-Title {
   text-align: center;
@@ -115,7 +122,6 @@ body {
 }
 
 .CarouselComponent img {
-  height: 600px;
   width: 100%;
 }
 
@@ -229,7 +235,6 @@ body {
   height: 600px;
   text-align: center;
   transition: 1s ease;
-  transform: scale(1.03);
   overflow: hidden;
   position: absolute;
 }
@@ -283,8 +288,6 @@ body {
   }
   .EventPageSpotlightImg {
     height: 300px;
-    transform: scale(1.2);
-
   }
   .EventPageSpotlightImg h2 {
     margin-top: 100px;
@@ -402,10 +405,10 @@ body {
   width: 50px;
   transition: all 0.4s;
   margin: 40px 10px 0px 10px;
+
 }
 
 .FooterMediaIcons:hover {
-  transform: scale(1.2);
   fill: white;
 }
 
@@ -418,6 +421,7 @@ body {
 .FooterNavigationList li {
   display: inline-block;
   margin: 10px 10px 0px 10px;
+  font-family: Moon;
 }
 
 .FooterInputLockup {
@@ -426,4 +430,34 @@ body {
 .FooterInput {
   display: inline-block;
   width: 250px;
+}
+
+.FooterNavLink {
+  color: white;
+  text-decoration: none;
+}
+
+.FooterNavLink:hover {
+  color: white;
+}
+
+.FooterNavLink:active {
+  color: white;
+}
+
+#FooterConnectText {
+  font-size: 20px;
+  font-family: Moon;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .FooterMediaIcons {
+    height: 40px;
+    width: 40px;
+  }
+
+  .FooterNavLink {
+    font-size: 10px;
+  }
 }

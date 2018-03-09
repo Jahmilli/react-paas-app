@@ -13,27 +13,10 @@ export default class Event extends Component {
       <div className="EventsPage">
       <div className="container">
       <h1>What we do</h1>
-      <p>Lorem ipsum dolor sit amet, no habeo insolens eos. Lorem iuvaret vim ea. Sed ei aliquam maluisset. Meis diceret cu cum, at liber harum has.
-         Platonem appellantur mea no, in usu consulatu deseruisse, eos suas esse ei. Magna errem nonumes ad sit, illud dolorum eam ad, et nisl blandit iudicabit cum.
-
-         Eu appetere definitionem usu. Ne mei dicta gubergren. Eos autem mentitum ponderum an,
-         sea elit instructior ad. At solet fabulas eum, persius delenit ex usu. Eu vix oporteat accusata adolescens,
-         ullum alienum ne mel. Vis dolorum luptatum iracundia ad, per ut choro accumsan repudiare.
-         <br/>
-         Lorem ipsum dolor sit amet, no habeo insolens eos. Lorem iuvaret vim ea. Sed ei aliquam maluisset. Meis diceret cu cum, at liber harum has.
-        Platonem appellantur mea no, in usu consulatu deseruisse, eos suas esse ei. Magna errem nonumes ad sit, illud dolorum eam ad, et nisl blandit iudicabit cum.
-
-        Eu appetere definitionem usu. Ne mei dicta gubergren. Eos autem mentitum ponderum an,
-        sea elit instructior ad. At solet fabulas eum, persius delenit ex usu. Eu vix oporteat accusata adolescens,
-        ullum alienum ne mel. Vis dolorum luptatum iracundia ad, per ut choro accumsan repudiare.
-        <br/>
-        Lorem ipsum dolor sit amet, no habeo insolens eos. Lorem iuvaret vim ea. Sed ei aliquam maluisset. Meis diceret cu cum, at liber harum has.
-           Platonem appellantur mea no, in usu consulatu deseruisse, eos suas esse ei. Magna errem nonumes ad sit, illud dolorum eam ad, et nisl blandit iudicabit cum.
-
-           Eu appetere definitionem usu. Ne mei dicta gubergren. Eos autem mentitum ponderum an,
-           sea elit instructior ad. At solet fabulas eum, persius delenit ex usu. Eu vix oporteat accusata adolescens,
-           ullum alienum ne mel. Vis dolorum luptatum iracundia ad, per ut choro accumsan repudiare.
-
+      <p>
+        PAAS UTS will be scaling massively in 2018 to provide the best opportunities to its members. Whether you are an engineering, business, law, science or art student or just a
+        fellow space enthusiast we will try to cater to cater to every area of interest. These events will range from project based work with the development of a High Altitude Baloon (HAB)
+        launch to social events, speaker talks and general meet ups we hope to grow interest among all students into the areas of space. 
       </p>
       </div>
         <EventItem background={Elon} eventLink="/future-events" eventTitle="Future Events" />
