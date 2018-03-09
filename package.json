@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": " https://jahmilli.github.io/react-paas-app/",
+  "homepage": "https://jahmilli.github.io/react-paas-app/",
   "proxy": "http://localhost:3000/",
   "dependencies": {
     "bootstrap": "^3.3.7",
