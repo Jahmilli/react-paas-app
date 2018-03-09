@@ -14,8 +14,8 @@ export default class PresidentMessage extends Component {
         us to Mars, prevent droughts in third world countries or facilitate unity between opposing governments.
         The PAAS member will be a part of the next generation who will lead the Space Industry.
         The sky is not the limit.”
-        - Gavan Huang
         <br /><br />
+        - Gavan Huang
         </p>
       </div>
     );

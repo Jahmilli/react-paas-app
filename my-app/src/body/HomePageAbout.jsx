@@ -25,7 +25,7 @@ export default class About extends Component {
 
           </p>
           <br />
-          <a className="MembershipLink" href="https://utspaasmembership.getqpay.com/" target="_blank"><button type="button"><ExternalLink /> Become a member!</button></a>
+          <a className="MembershipLink" href="https://activateuts.com.au/clubs/professional-aeronautics-and-astronautics-society-paas" target="_blank"><button type="button"><ExternalLink /> Become a member!</button></a>
         </div>
         <div className="Home-Page-Carousel">
           <CarouselComponent

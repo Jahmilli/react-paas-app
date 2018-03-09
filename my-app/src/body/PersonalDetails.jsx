@@ -8,7 +8,7 @@ export default class PersonalDetails extends Component {
   render() {
     return (
       <div className="PersonalDetails">
-        <p><strong> {this.props.first} {this.props.last}</strong> <br /> {this.props.info} </p>
+        <p><strong> {this.props.first} {this.props.last}</strong> <br /> {this.props.title} </p>
         <img onClick={this.handleChange.bind(this)} className="ProfilePicture" alt="Hello" src={this.props.photo} />
       </div>
     );
