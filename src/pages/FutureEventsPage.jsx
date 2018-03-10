@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Elon from '../images/iac_2016_elon_musk.jpg';
 import FutureEvents from '../body/FutureEvents';
+import Images from '../image-urls';
 
 export default class FutureEventsPage extends Component {
   render() {
     return (
       <div className="EventsPage">
-        <FutureEvents eventsPhoto={Elon}/>
+        <FutureEvents eventsPhoto={Images.sebCStanding}/>
       </div>
     );
   }

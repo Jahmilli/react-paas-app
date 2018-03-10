@@ -3,7 +3,6 @@ import { Parallax } from 'react-parallax';
 import CarouselComponent from './CarouselComponent';
 
 import Images from '../image-urls';
-import SpacePanel from '../images/space_panel_night_1.jpg';
 
 export default class PastEvents extends Component {
   render() {

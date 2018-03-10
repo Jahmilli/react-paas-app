@@ -5,9 +5,6 @@ import ExternalLink from 'react-icons/lib/fa/external-link';
 
 import Images from '../image-urls';
 
-import Gavan from '../images/space_panel_night_gavan.jpg';
-
-
 import { Col } from 'react-bootstrap';
 
 export default class About extends Component {

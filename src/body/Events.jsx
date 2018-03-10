@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 
 import Images from '../image-urls';
-import DeskPicture from '../images/deskpicture.jpg';
-import Gavan from '../images/space_panel_night_gavan.jpg';
-import Elon from '../images/iac_2016_elon_musk.jpg';
-
 import EventItem from './EventItem';
 
 
