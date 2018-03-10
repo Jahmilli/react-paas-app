@@ -13,6 +13,15 @@ import { HashRouter, Route } from 'react-router-dom';
 
 
 class App extends Component {
+
+  renderGallery() {
+    return (
+      <div>
+         <Route path='/gallery' component={GalleryPage} />
+          <Route path='/gallery-carousel' component={PhotoGalleryWithCarousel} />
+      </div>
+    );
+  }
   render() {
     return (
       <HashRouter>
@@ -22,9 +31,7 @@ class App extends Component {
           <Route path='/about' component={About} />
           <Route path='/events' component={Events} />
           <Route path='/future-events' component={FutureEvents} />
-          <Route path='/past-events' component={PastEvents} />
-          <Route path='/gallery' component={GalleryPage} />
-          <Route path='/gallery-carousel' component={PhotoGalleryWithCarousel} />
+          <Route path='/past-events' component={PastEvents} />         
           <Route path='/contact' component={Contact} />
           <Footer />
         </div>
