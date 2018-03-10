@@ -3,6 +3,16 @@ import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
 export default class Navigation extends React.Component {
+renderGallery() {
+  return (
+    <div>
+      <MenuItem divider />
+      <LinkContainer to={{ pathname: '/gallery' }}>
+        <MenuItem eventKey={2.4}>Gallery</MenuItem>
+      </LinkContainer>
+    </div>
+  );
+}
 
 render() {
   return (
@@ -29,10 +39,6 @@ render() {
           </LinkContainer>
           <LinkContainer to={{ pathname: '/past-events' }}>
             <MenuItem eventKey={2.3}>Past Events</MenuItem>
-          </LinkContainer>
-          <MenuItem divider />
-          <LinkContainer to={{ pathname: '/gallery' }}>
-            <MenuItem eventKey={2.4}>Gallery</MenuItem>
           </LinkContainer>
         </NavDropdown>
             <LinkContainer to="/contact">

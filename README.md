@@ -24,6 +24,9 @@ Running the Development sever:
   - npm run start
 - READ: If the site doesn't run check the terminal for any errors or the console in chrome dev tools!
 
+Deploying latest build:
+- On master branch, run 'npm run deploy'
+
 Home Page
 Files in use are: 'pages/Home',
  'header/Header', 'header/Navigation', 'header/SocialMedia', 'header/Title',

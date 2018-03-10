@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import Images from '../image-urls';
 import DeskPicture from '../images/deskpicture.jpg';
 import Gavan from '../images/space_panel_night_gavan.jpg';
 import Elon from '../images/iac_2016_elon_musk.jpg';
@@ -19,7 +20,7 @@ export default class Event extends Component {
         launch to social events, workshops, speaker talks and general meet ups as we hope to grow interest among all students into the areas of space. 
       </p>
       </div>
-        <EventItem background={Elon} eventLink="/future-events" eventTitle="Future Events" />
+        <EventItem background={Images.habLaunch} eventLink="/future-events" eventTitle="Future Events" />
 
         <div className="container">
           <h2>Future Events Blah blah</h2>
@@ -45,7 +46,7 @@ export default class Event extends Component {
            ullum alienum ne mel. Vis dolorum luptatum iracundia ad, per ut choro accumsan repudiare.
           </p>
         </div>
-        <EventItem background={Gavan} eventLink="/past-events" eventTitle="Past Events" />
+        <EventItem background={Images.gavanPeaceSign} eventLink="/past-events" eventTitle="Past Events" />
         <div className="container">
           <h2>Future Events Blah blah</h2>
           <p>Lorem ipsum dolor sit amet, no habeo insolens eos. Lorem iuvaret vim ea. Sed ei aliquam maluisset. Meis diceret cu cum, at liber harum has.
@@ -70,7 +71,7 @@ export default class Event extends Component {
            ullum alienum ne mel. Vis dolorum luptatum iracundia ad, per ut choro accumsan repudiare.
           </p>
         </div>
-        <EventItem background={DeskPicture} eventLink="/gallery" eventTitle="Gallery" />
+        <EventItem background={Images.deskPicture} eventLink="/gallery" eventTitle="Gallery" />
         <div className="container">
           <h2>Future Events Blah blah</h2>
           <p>Lorem ipsum dolor sit amet, no habeo insolens eos. Lorem iuvaret vim ea. Sed ei aliquam maluisset. Meis diceret cu cum, at liber harum has.
