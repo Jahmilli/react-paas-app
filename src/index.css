@@ -289,15 +289,15 @@ body {
   transition: 0.5s ease-in-out;
 }
 
+.EventPageLink:hover + .EventPageSpotlightImg {
+  filter: blur(3px);
+}
+
 .EventPageLink:hover {
   color: rgba(255,255,255,1);
   border: 2px solid rgba(255,255,255,1);
   background-color: rgba(0,0,0,0.7);
   text-decoration: none;
-}
-
-.EventPageLink:hover + .EventPageSpotlightImg {
-  filter: blur(3px);
 }
 
 @media only screen and (max-width: 500px) {
@@ -311,7 +311,6 @@ body {
   .EventPageSpotlightImg h2 {
     margin-top: 100px;
   }
-
   .CarouselComponent h1 {
     font-size: 20px;
   }
@@ -322,7 +321,6 @@ body {
   display: inline-block;
   margin: 5px;
 }
-
 
 .GalleryImageLeft {
   display: inline-block;
@@ -338,7 +336,6 @@ body {
   width: 300px;
 }
 
-
 .GalleryImageLeft:hover {
   cursor: pointer;
   border: 1px solid rgba(0,0,0,0.8);
@@ -347,7 +344,6 @@ body {
 .CarouselComponentGallery {
   top: 100px;
 }
-
 
 .GalleryCarousel {
   height: 400px;
@@ -468,7 +464,6 @@ body {
   font-size: 20px;
   font-family: Moon;
 }
-
 
 @media only screen and (max-width: 500px) {
   .FooterMediaIcons {

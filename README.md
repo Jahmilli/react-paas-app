@@ -52,21 +52,20 @@ Events Page
 
 Future Events + Past Events Pages
 ISSUE:
--Currently the carousel is changing height depending on the height of the image but only if it smaller than the max. This can be changed
+- Currently the carousel is changing height depending on the height of the image but only if it smaller than the max. This can be changed
  however it might be worthwhile to keep it as it is....
--Height of the image might need to be reduced
+- Height of the image might need to be reduced
 
 
--These pages are exactly identical in structure however changes need to be made to either './FutureEventsPage' or './PastEventsPage'
+- These pages are exactly identical in structure however changes need to be made to either './FutureEventsPage' or './PastEventsPage'
  and then furthermore changes into their respective calling components ('FutureEvents'/'PastEvents').
--Changes to the images are just changing the headings and photo props of the carousel components...
+- Changes to the images are just changing the headings and photo props of the carousel components...
 
 
 Photo Gallery
 Styling fix:
--In the gallery carousel page if you click on a photo the state is changed and the image will rerender. However there is room for
+- In the gallery carousel page if you click on a photo the state is changed and the image will rerender. However there is room for
  improvement in the way it rerenders which will likely just need some  basic styling changes in the 'PhotoGalleryCarouselLockup' css class.
-
 
 Contact Page
 Issue:
