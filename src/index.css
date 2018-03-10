@@ -22,10 +22,9 @@
 @keyframes KickerFadeIn {
   0% {
     opacity: 0;
-    transform: translateY(200px);
+    transform: translateY(150px);
   }
   100% {
-
     opacity: 1;
     transform: translateY(0);
   }
@@ -41,7 +40,6 @@ body {
 .Navbar {
   padding: 0px;
   margin: 0px;
-
 }
 
 .HrStyle {
@@ -77,8 +75,6 @@ body {
   letter-spacing: 0.1em;
 }
 
-
-
 .Section-Title {
   text-align: center;
   display: block;
@@ -91,7 +87,6 @@ body {
 
 .Home-About-Info {
   padding: 0px 75px;
-
 }
 
 .Home-Page-Carousel {
@@ -145,6 +140,55 @@ body {
   text-align: left;
 }
 
+@media only screen and (max-width: 600px) {
+  .Title-Lockup h1 {
+    font-size: 45px;
+    padding-top: 200px;
+  }
+
+  .Kicker {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Title-Lockup h1 {
+    font-size: 35px;
+    padding-top: 200px;
+  }
+
+  .Kicker {
+    font-size: 30px;
+  }
+
+  .Home-About-Info {
+    padding: 0px;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  .Title-Lockup h1 {
+    font-size: 30px;
+    padding-top: 200px;
+  }
+
+  .Kicker {
+    font-size: 25px;
+  }
+
+  .Home-About-Info {
+    padding: 0px;
+  }
+
+}
+
+/* About Section */
+
+.About p {
+  padding: 0% 15%;
+}
+
 .ProfilePicture {
   height: 200px;
   width: 200px;
@@ -171,37 +215,8 @@ body {
   height: 150px;
 }
 
-@media only screen and (max-width: 600px) {
-  .Title-Lockup h1 {
-    font-size: 45px;
-    padding-top: 200px;
-  }
+.PartnershipLockup {
 
-  .Kicker {
-    font-size: 35px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .Title-Lockup h1 {
-    font-size: 35px;
-    padding-top: 200px;
-  }
-
-  .Kicker {
-    font-size: 25px;
-  }
-
-  .Home-About-Info {
-    padding: 0px;
-  }
-
-}
-
-/* About Section */
-
-.About p {
-  padding: 0% 15%;
 }
 
 .PartnershipDetails img {
@@ -214,7 +229,7 @@ body {
 }
 
 .PresidentMessage p {
-  text-align: left;
+  
 }
 
 @media only screen and (max-width: 500px) {
@@ -223,6 +238,9 @@ body {
     width: 100%;
   }
 
+  .ExecutiveDescriptions {
+    height: 200px;
+  }
 }
 
 

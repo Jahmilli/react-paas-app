@@ -5,7 +5,7 @@ import Images from '../image-urls';
 export default class Partnerships extends Component {
   render() {
     return (
-      <div className="container-fluid">
+      <div className="container-fluid partnershipLockup">
         <h2>Partners</h2>
         <PartnershipDetails partnerLogo={Images.partnerships.bluesatLogo} link="http://bluesat.com.au/"/>
         <PartnershipDetails partnerLogo={Images.partnerships.orbitozLogo} link="http://orbitoz.com/"/>

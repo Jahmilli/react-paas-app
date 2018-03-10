@@ -17,7 +17,7 @@ module.exports = {
 	},
 	SEBASTIAN: {
 		title: titles.vicePresident,
-		description: "I am the Vice President of the Professional Aeronautics & Astronautics Society' in which we spark conversation and skill development into all matters related to Aerospace. This is something I am strongly passionate as I believe the utilisation of space is key to the success of humanity and its continued development. Even further, I believe that students should be provided more opportunities to learn about the industry and become more involved and ultimately I hope to assist in providing these opportunities. More so, I am the treasurer of UTS ProgSoc and hope to assist the development of the society so that more people from UTS interested in software development have access to more opportunities!",
+		description: "Space and technology enthusiast with a passion to continue to develop my skills that will help me make a difference in the future!",
 	}, 
 	KSHITIJ: {
 		title: titles.vicePresident,

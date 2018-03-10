@@ -65,8 +65,8 @@ export default class ExecutiveInfo extends Component {
           </Col>
         </div>
         <div className="row ExecutiveDescriptions">
-          <p className="ExecutiveDescriptions">{this.state.text}</p>
-        </div>
+          <p className="ExecutiveDescriptions">{this.state.text}<br /></p>
+        </div>        
       </div>
     );
   }
