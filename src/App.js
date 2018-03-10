@@ -23,6 +23,7 @@ class App extends Component {
     );
   }
   render() {
+    console.log("Hope you're having a nice day! :) - Sebastian 10-03-2018")
     return (
       <HashRouter>
         <div className="App">

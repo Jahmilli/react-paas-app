@@ -9,7 +9,7 @@ export default class Event extends Component {
     return (
       <div className="EventsPage">
       <div className="container">
-      <h1>What we do</h1>
+      <h1>What do we do?</h1>
       <p>
         PAAS UTS will be scaling massively in 2018 to provide the best opportunities to its members. Whether you are an engineering, business, law, science or art student or just a
         fellow space enthusiast we will try to cater to cater to every area of interest. These events will range from project based work with the development of a High Altitude Baloon (HAB)
@@ -17,7 +17,6 @@ export default class Event extends Component {
       </p>
       </div>
         <EventItem background={Images.habLaunch} eventLink="/future-events" eventTitle="Future Events" />
-
         <div className="container">
           <h2>Future Events Blah blah</h2>
           <p>Lorem ipsum dolor sit amet, no habeo insolens eos. Lorem iuvaret vim ea. Sed ei aliquam maluisset. Meis diceret cu cum, at liber harum has.

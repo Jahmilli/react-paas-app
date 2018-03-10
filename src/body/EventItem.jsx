@@ -7,9 +7,8 @@ export default class EventItem extends Component {
     return(
       <div>
         <Link className="EventPageLink" to={this.props.eventLink}>{this.props.eventTitle}</Link>
-        <Parallax className="EventPageSpotlightImg" bgImage={this.props.background} strength={200}>
-        <br/>
-        </Parallax>
+        <div className="EventPageSpotlightImg" style={{backgroundImage: `url(${this.props.background})`}}>        
+        </div>
       </div>
     );
   }

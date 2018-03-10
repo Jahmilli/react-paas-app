@@ -47,7 +47,7 @@ export default class ExecutiveInfo extends Component {
             <PersonalDetails changeLink={(newName) => this.onChangeLinkName(newName)} first="Argie" last="Alaso" title={Executive.ARGIE.title} description={Executive.ARGIE.description} photo={Images.profiles.argieProfile}></PersonalDetails>
           </Col>
           <Col md={2}>
-            <PersonalDetails changeLink={(newName) => this.onChangeLinkName(newName)} first="Georgia" last="May McCarthy" title={Executive.GEORGIA.title} description={Executive.GEORGIA.description} photo={Images.profiles.georgiaProfile}></PersonalDetails>
+            <PersonalDetails changeLink={(newName) => this.onChangeLinkName(newName)} first="Georgia" last="McCarthy" title={Executive.GEORGIA.title} description={Executive.GEORGIA.description} photo={Images.profiles.georgiaProfile}></PersonalDetails>
           </Col>
         </div>
         <div className="row">
