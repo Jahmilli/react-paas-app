@@ -12,6 +12,7 @@ export default class PastEvents extends Component {
         <h2>Past Events</h2>
         </Parallax>
         <CarouselComponent
+        carouselClassName="CarouselEventLockup CarouselComponent"
         photo1={Images.sebCStanding}
         heading1="Q&A Space Panel Night"
         link1="https://www.facebook.com/events/1515511468511749/?acontext=%7B%22source%22%3A5%2C%22page_id_source%22%3A1264001986977158%2C%22action_history%22%3A[%7B%22surface%22%3A%22page%22%2C%22mechanism%22%3A%22main_list%22%2C%22extra_data%22%3A%22%7B%5C%22page_id%5C%22%3A1264001986977158%2C%5C%22tour_id%5C%22%3Anull%7D%22%7D]%2C%22has_source%22%3Atrue%7D"
@@ -21,11 +22,11 @@ export default class PastEvents extends Component {
         link2="https://www.facebook.com/events/429577420755189/"
 
         photo3={Images.pastEvents.startGazingNight}
-        heading3="PAASxPhotoSoc Stargazing Night"
+        heading3=""
         link3="https://www.facebook.com/events/1725987907709070/"
 
         photo4={Images.pastEvents.stemSports}
-        heading4="STEM Sports"
+        heading4=""
         link4="https://www.facebook.com/events/825003464331274/"/>
       </div>
     );

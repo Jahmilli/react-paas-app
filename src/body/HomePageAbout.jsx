@@ -24,13 +24,12 @@ export default class About extends Component {
           <br />
           <a className="MembershipLink" href="https://activateuts.com.au/clubs/professional-aeronautics-and-astronautics-society-paas" target="_blank"><button type="button"><ExternalLink /> Become a member!</button></a>
         </div>
-        <div className="Home-Page-Carousel">
           <CarouselComponent
-          photo1={Images.sebCStanding} heading1="Space Panel" description1="This is a description"
-          photo2={Images.welcomeNight1} heading2="Gavan!" description2="This is a description"
-          photo3={Images.sebCStanding} heading3="Space Panel" description3="This is a description"
-          photo4={Images.welcomeNight2} heading4="Gavan4!!!!" description4="This is a description" />
-        </div>
+          carouselClassName="CarouselComponent"
+          photo1={Images.sebCStanding} heading1="" description1="Seb C with Warwick Holmes and Stephen Freeland" 
+          photo2={Images.welcomeNight1} heading2="" description2="2018 Welcome Night"
+          photo3={Images.welcomeNight2} heading3="" description3="2018 Welcome Night"
+          photo4={Images.welcomeNight3} heading4="" description4="2018 Welcome Night" />
 
         <div className="row">
           <Col sm={4}>
