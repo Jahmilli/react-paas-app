@@ -153,15 +153,17 @@ body {
   .CarouselEventLockup {
     height: 100%;
   }
+  .Title-Lockup h1 {
+    padding-top: 100px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .Title-Lockup h1 {
     font-size: 45px;
-    padding-top: 200px;
   }
   .Kicker {
-    font-size: 35px;
+    font-size: 40px;
   }
 
   .CarouselEventLockup {
@@ -172,7 +174,6 @@ body {
 @media only screen and (max-width: 500px) {
   .Title-Lockup h1 {
     font-size: 35px;
-    padding-top: 200px;
   }
 
   .Kicker {
@@ -188,7 +189,6 @@ body {
 @media only screen and (max-width: 400px) {
   .Title-Lockup h1 {
     font-size: 30px;
-    padding-top: 200px;
   }
 
   .Kicker {
@@ -234,7 +234,7 @@ body {
 }
 
 .PartnershipLockup {
-
+  padding-bottom: 10vh;
 }
 
 .PartnershipDetails img {
@@ -247,7 +247,7 @@ body {
 }
 
 .PresidentMessage p {
-  
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -270,7 +270,7 @@ body {
 .EventPageSpotlightImg {
   height: 600px;
   text-align: center;
-  transition: 1s ease;  
+  transition: 1s ease;
   overflow: hidden;
   width: 100%;
   background-size: cover;

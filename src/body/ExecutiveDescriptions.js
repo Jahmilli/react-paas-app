@@ -1,3 +1,4 @@
+const Images = require('../image-urls');
 var titles = {
 	president: "President",
 	vicePresident: "Vice President",
@@ -10,54 +11,89 @@ var titles = {
 	advisor: "Advisor",
 }
 
-module.exports = {
-	GAVAN: {
+module.exports = [
+	{
+		firstName: "Gavan",
+		lastName: "Huang",
 		title: titles.president,
 		description: "Gavan description",
+		profilePicture: Images.profiles.gavanProfile
 	},
-	SEBASTIAN: {
+  {
+		firstName: "Sebastian",
+		lastName: "Southern",
 		title: titles.vicePresident,
 		description: "Space and technology enthusiast with a passion to continue to develop my skills that will help me make a difference in the future!",
-	}, 
-	KSHITIJ: {
+		profilePicture: Images.profiles.sebastianProfile
+	},
+	{
+		firstName: "Kshitij",
+		lastName: "Karub",
 		title: titles.vicePresident,
 		description: "Description",
+		profilePicture: Images.profiles.kshitijProfile
 	},
-	JASON: {
+	{
+		firstName: "Jason",
+		lastName: "Ho",
 		title: titles.technicalOfficer,
 		description: "Description",
+		profilePicture: Images.profiles.jasonProfile
 	},
-	CALLUM: {
+	{
+		firstName: "Callum",
+		lastName: "Oldfield",
 		title: titles.industryOfficer,
 		description: "Description",
+		profilePicture: Images.profiles.callumProfile
 	},
-	CALEY: {
+	{
+		firstName: "Caley",
+		lastName: "Yarnold",
 		title: titles.industryOfficer,
 		description: "Description",
+		profilePicture: Images.profiles.caleyProfile
 	},
-	ARGIE: {
+	{
+		firstName: "Argie",
+		lastName: "Alaso",
 		title: titles.socialOfficer,
 		description: "Description",
+		profilePicture: Images.profiles.argieProfile
 	},
-	GEORGIA: {
+	{
+		firstName: "Georgia",
+		lastName: "McCarthy",
 		title: titles.treasurer,
 		description: "Description",
+		profilePicture: Images.profiles.georgiaProfile
 	},
-	SHIVANGI: {
+	{
+		firstName: "Shivangi",
+		lastName: "Singh",
 		title: titles.administrator,
 		description: "Description",
+		profilePicture: Images.profiles.shivangiProfile
 	},
-	JONATHAN: {
+	{
+		firstName: "Jonathan",
+		lastName: "Reibel",
 		title: titles.general,
 		description: "Description",
+		profilePicture: Images.profiles.jonathanProfile
 	},
-	MICHAEL: {
+	{
+		firstName: "Michael",
+		lastName: "Fedulov",
 		title: titles.general,
 		description: "Description",
+		profilePicture: Images.profiles.michaelProfile
 	},
-	ALASTAIR: {
+	{
+		firstName: "Alastair",
+		lastName: "Bate",
 		title: titles.advisor,
 		description: "Description",
+		profilePicture: Images.profiles.alastairProfile
 	},
-
-}
+]

@@ -22,6 +22,7 @@ class App extends Component {
       </div>
     );
   }
+  
   render() {
     console.log("Hope you're having a nice day! :) - Sebastian 10-03-2018")
     return (
@@ -32,7 +33,7 @@ class App extends Component {
           <Route path='/about' component={About} />
           <Route path='/events' component={Events} />
           <Route path='/future-events' component={FutureEvents} />
-          <Route path='/past-events' component={PastEvents} />         
+          <Route path='/past-events' component={PastEvents} />
           <Route path='/contact' component={Contact} />
           <Footer />
         </div>

@@ -12,14 +12,14 @@ export default class CarouselComponent extends Component {
 
     return LIST.map((items, index) => {
       return (
-      <Carousel.Item className={this.props.carouselClassName} >
-        <img alt="900x500" src={items.photo}/>
-        <Carousel.Caption>
-          <h1>{items.heading}</h1>
-          <p>{items.description}</p>
-          {this.isLink(items.url)}
-        </Carousel.Caption>
-      </Carousel.Item>
+        <Carousel.Item className={this.props.carouselClassName} >
+          <img alt="900x500" src={items.photo}/>
+          <Carousel.Caption>
+            <h1>{items.heading}</h1>
+            <p>{items.description}</p>
+            {this.isLink(items.url)}
+          </Carousel.Caption>
+        </Carousel.Item>
       );
     });
 
