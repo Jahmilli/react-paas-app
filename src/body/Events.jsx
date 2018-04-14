@@ -45,7 +45,7 @@ export default class Event extends Component {
       <p>
         PAAS UTS will be scaling massively in 2018 to provide the best opportunities to its members. Whether you are an engineering, business, law, science or art student or just a
         fellow space enthusiast we will try to cater to cater to every area of interest. These events will range from project based work with the development of a High Altitude Baloon (HAB)
-        launch to social events, workshops, speaker talks and general meet ups as we hope to grow interest among all students into the areas of space. 
+        launch to social events, workshops, speaker talks and general meet ups as we hope to grow interest among all students into the areas of space.
       </p>
       </div>
         <EventItem background={Images.habLaunch} eventLink="/future-events" eventTitle="Future Events" />

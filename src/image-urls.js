@@ -1,6 +1,6 @@
 module.exports = {
 	deskPicture: "https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/18268593_1503653396345348_1904522374350346919_n.jpg?oh=36b62bd4e14ed67c3d2e4b34c7f252af&oe=5B35CAAA",
-	sebCStanding: "https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/18222381_1503653586345329_555191172687715752_n.jpg?oh=ea9e996628c8d174d01c78a72befc2e2&oe=5B43BA4F",	
+	sebCStanding: "https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/18222381_1503653586345329_555191172687715752_n.jpg?oh=ea9e996628c8d174d01c78a72befc2e2&oe=5B43BA4F",
 	gavanPeaceSign: "https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/18274931_1503648683012486_124882601721384116_n.jpg?oh=0923dc53817cb86309353ed6a9ac7580&oe=5B348CCB",
 	welcomeNight1: "https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/28795626_1820795184631166_7764839591680409600_n.jpg?oh=4e730dfba3f6c6a2392ac029363a62ba&oe=5B41FF2B",
 	welcomeNight2: "https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/28783644_1820794634631221_7540025751978901504_n.jpg?oh=800c4dbae77d39854817d69617b4ea67&oe=5B4E43B4",
@@ -27,7 +27,7 @@ module.exports = {
 		alastairProfile: "https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/26239873_1962393434079860_5958662918981999172_n.jpg?oh=40f1fc92d42c594c32d462cb613c7c04&oe=5B3FDAB3",
 	},
 	futureEvents: {
-		qaSpacePanelNight2018: "https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/27971831_1793102194067132_3197811435886800712_n.jpg?oh=8013e5eb4475e87e5e5c5e0b4f302bbd&oe=5B3B8249", 
+		qaSpacePanelNight2018: "https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/27971831_1793102194067132_3197811435886800712_n.jpg?oh=8013e5eb4475e87e5e5c5e0b4f302bbd&oe=5B3B8249",
 	},
 	pastEvents: {
 		spaceStartUpForDummies: "https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/18620489_1525327914177896_8118681580736931985_n.jpg?oh=aeeb19005dd6fb6cb3be66e5d7dcd8e6&oe=5B3B1727",

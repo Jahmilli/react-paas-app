@@ -5,7 +5,6 @@ var BodyParser = require('body-parser');
 var app = express();
 
 app.use(BodyParser.json());
-
 app.post("/api/contact", (req, res) => {
   console.log(req.body);
   var email = req.body.email;
@@ -13,7 +12,6 @@ app.post("/api/contact", (req, res) => {
   var last = req.body.lastName;
   var message = req.body.message;
   sendEmail(email, first, last, message);
-
 });
 
 function sendEmail(email, first, last, message) {
