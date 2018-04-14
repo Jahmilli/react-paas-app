@@ -1,18 +1,4 @@
-var express = require('express');
-var nodemailer = require('nodemailer');
-var BodyParser = require('body-parser');
-
-var app = express();
-
-app.use(BodyParser.json());
-app.post("/api/contact", (req, res) => {
-  console.log(req.body);
-  var email = req.body.email;
-  var first = req.body.firstName;
-  var last = req.body.lastName;
-  var message = req.body.message;
-  sendEmail(email, first, last, message);
-});
+var nodemailer = require('nodemailer')
 
 function sendEmail(email, first, last, message) {
   let transporter = nodemailer.createTransport({
@@ -37,16 +23,15 @@ function sendEmail(email, first, last, message) {
 
   transporter.sendMail(HelperOptions, (err, info) => {
     if(err) {
-      console.log(err);
+      console.log(err)
     }
-    console.log("Message was sent: ");
-    console.log(info);
-
+    console.log("Message was sent: ")
+    console.log(info)
   })
 }
 
 module.exports = {
   "sendEmail": function() {
-    sendEmail(email, first, last, message) 
+    sendEmail(email, first, last, message)
   }
 }

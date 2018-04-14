@@ -54,7 +54,6 @@ function listAllMembers() {
           details += record.get(AIRTABLE_COLUMNS[i]) + ' '
         }
         console.log(details + '\n\n')
-
       })
       resolve("success")
     }, function done(err) {
