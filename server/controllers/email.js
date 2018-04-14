@@ -45,6 +45,8 @@ function sendEmail(email, first, last, message) {
   })
 }
 
-app.listen(3001, function() {
-  console.log('listening on port: 3001');
-})
+module.exports = {
+  "sendEmail": function() {
+    sendEmail(email, first, last, message) 
+  }
+}
