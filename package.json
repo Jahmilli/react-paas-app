@@ -5,7 +5,11 @@
   "homepage": "https://jahmilli.github.io/react-paas-app/",
   "proxy": "http://localhost:3000/",
   "dependencies": {
+    "airtable": "^0.5.2",
+    "body-parser": "^1.18.2",
     "bootstrap": "^3.3.7",
+    "csv-parse": "^2.1.0",
+    "dotenv": "^5.0.1",
     "history": "^4.6.3",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.0",
