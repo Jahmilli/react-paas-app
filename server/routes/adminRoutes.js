@@ -1,6 +1,7 @@
 var express = require('express')
 var airtableMembers = require('../controllers/airtableMembers')
-var email = require('../controllers/email')
+const request = require('request-promise'); //Can look at other alternatives later on...
+
 
 const router = express.Router()
 
@@ -23,12 +24,24 @@ router.get('/csv', (req, res) => {
   airtableMembers.readCSV()
 })
 
-router.post('/contact', (req, res) => {
-  var email = req.body.email;
-  var first = req.body.firstName;
-  var last = req.body.lastName;
-  var message = req.body.message;
-  email.sendEmail(email, first, last, message)
+router.get('/facebook-search/:id?', (req, res) => {
+  // you need permission for most of these fields
+  const userFieldSet = 'id, name, about, email, accounts, link, is_verified, significant_other, relationship_status, website, picture, photos, feed';
+  let id = '1264001986977158'
+  console.log(process.env.FB_SECRET)
+  const options = {
+    method: 'GET',
+    uri: `https://graph.facebook.com/v2.8/${id}`,
+    qs: {
+      access_token: '992873797538356|3NsnpKwCxC9kQDLkkMGY40u3Obs',
+      fields: userFieldSet
+    }
+  };
+  request(options)
+    .then(fbRes => {
+      res.json(fbRes);
+    })
 })
+
 
 module.exports = router

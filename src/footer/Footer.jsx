@@ -11,7 +11,7 @@ render() {
       <div className="Footer">
         <SocialMedia styleName="FooterMediaIconsLockup" mediaClass="FooterMediaIcons" />
         <ul className="FooterNavigationList">
-          <li classNam="FooterNavLink"><Link to="/" className="FooterNavLink">Home</Link></li>
+          <li className="FooterNavLink"><Link to="/" className="FooterNavLink">Home</Link></li>
           <li> | </li>
           <li><Link to="/about" className="FooterNavLink">About</Link></li>
           <li> | </li>

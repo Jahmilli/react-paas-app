@@ -31,7 +31,7 @@ function sendEmail(email, first, last, message) {
 }
 
 module.exports = {
-  "sendEmail": function() {
+  "sendEmail": function(email, first, last, message) {
     sendEmail(email, first, last, message)
   }
 }

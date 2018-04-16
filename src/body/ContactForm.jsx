@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { FormGroup, ControlLabel, FormControl, HelpBlock, Button, Col } from 'react-bootstrap';
 import isEmail from 'validator/lib/isEmail';
 
-const URL = '/api/contact';
+const URL = '/contact';
 
 export default class ContactForm extends Component {
   constructor() {
