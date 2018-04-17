@@ -31,16 +31,16 @@ render() {
               <NavItem eventKey={2}>About</NavItem>
             </LinkContainer>
             <NavDropdown key={2} title="Events" id="events-dropdown">
-          <LinkContainer to={{ pathname: '/events' }}>
-            <MenuItem eventKey={2.1}>Events</MenuItem>
-          </LinkContainer>
-          <LinkContainer to={{ pathname: '/future-events' }}>
-            <MenuItem eventKey={2.2}>Future Events</MenuItem>
-          </LinkContainer>
-          <LinkContainer to={{ pathname: '/past-events' }}>
-            <MenuItem eventKey={2.3}>Past Events</MenuItem>
-          </LinkContainer>
-        </NavDropdown>
+              <LinkContainer to={{ pathname: '/events' }}>
+                <MenuItem eventKey={2.1}>Events</MenuItem>
+              </LinkContainer>
+              <LinkContainer to={{ pathname: '/future-events' }}>
+                <MenuItem eventKey={2.2}>Future Events</MenuItem>
+              </LinkContainer>
+              <LinkContainer to={{ pathname: '/past-events' }}>
+                <MenuItem eventKey={2.3}>Past Events</MenuItem>
+              </LinkContainer>
+            </NavDropdown>
             <LinkContainer to="/contact">
               <NavItem eventKey={4}>Contact</NavItem>
             </LinkContainer>

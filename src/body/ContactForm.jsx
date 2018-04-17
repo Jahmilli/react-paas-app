@@ -31,9 +31,12 @@ export default class ContactForm extends Component {
           lastName: this.state.lastName,
           message: this.state.message,
         })
+      }).then((res) => {
+        console.log(JSON.stringify(res))
+        alert("Email successfully sent to " + JSON.stringify(res.accepted))
       })
         .catch((err) => {
-          alert('Error occured while trying to connect with the server');
+          alert("Error occured while trying to connect with the server");
         });
     }
   }

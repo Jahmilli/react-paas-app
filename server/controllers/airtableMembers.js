@@ -27,7 +27,6 @@ const AIRTABLE_COLUMNS = [
   'Dietary Requirements'
 ]
 
-
 function readCSV() {
   return myPromise = new Promise(function(resolve, reject) {
     let csvData = []
@@ -84,7 +83,6 @@ function searchMember(first, last) {
       if (err) { reject(err); return }
     })
   })
-
 }
 
 //checking if empty tables exist on Airtable and should remove them from count!

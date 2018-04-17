@@ -19,12 +19,6 @@ render() {
           <li> | </li>
           <li><Link to="/contact" className="FooterNavLink">Contact</Link></li>
         </ul>
-        <div className="FooterInputLockup">
-          <p id="FooterConnectText">Connect with us!</p>
-          <div className="FooterInput">
-            <FormControl style={{textAlign: 'center'}} type="text" placeholder="Email" />
-          </div>
-        </div>
       </div>
     );
   }

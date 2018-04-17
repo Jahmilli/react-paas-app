@@ -12,7 +12,14 @@ router.post('/contact', (req, res) => {
   var first = req.body.firstName;
   var last = req.body.lastName;
   var message = req.body.message;
-  emailController.sendEmail(email, first, last, message)
+  emailController.sendEmail(email, first, last, message).then(function(myResolve) {
+    console.log(myResolve)
+    res.send("Sent!")
+  }).catch(function(err) {
+    console.log(err)
+    res.send("Failed")
+  })
+
 })
 
 module.exports = router
