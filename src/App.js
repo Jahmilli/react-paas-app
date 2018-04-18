@@ -9,6 +9,8 @@ import PastEvents from './pages/PastEventsPage';
 import GalleryPage from './pages/GalleryPage';
 import PhotoGalleryWithCarousel from './body/PhotoGalleryWithCarousel';
 import Footer from './footer/Footer';
+
+import Admin from './pages/AdminPage';
 import { HashRouter, Route } from 'react-router-dom';
 
 
@@ -22,7 +24,7 @@ class App extends Component {
       </div>
     );
   }
-  
+
   render() {
     console.log("Hope you're having a nice day! :) - Sebastian 10-03-2018")
     return (
@@ -35,6 +37,7 @@ class App extends Component {
           <Route path='/future-events' component={FutureEvents} />
           <Route path='/past-events' component={PastEvents} />
           <Route path='/contact' component={Contact} />
+          <Route path='/admin' component={Admin} />
           <Footer />
         </div>
       </HashRouter>

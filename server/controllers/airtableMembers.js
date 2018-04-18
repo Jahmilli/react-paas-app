@@ -38,6 +38,8 @@ function readCSV() {
       .on('end',function() {
         resolve(csvData)
       })
+  }).catch(function(err) {
+    reject(err)
   })
 }
 
@@ -47,14 +49,15 @@ function listAllMembers() {
     base(AIRTABLE_TABLE).select({
         view: 'Grid view'
     }).eachPage(function page(records) {
+      var memberData = [];
       records.forEach(function(record) {
-        var details = ""
+        var details = []
         for(var i in AIRTABLE_COLUMNS) {
-          details += record.get(AIRTABLE_COLUMNS[i]) + ' '
+          details.push(record.get(AIRTABLE_COLUMNS[i]))
         }
-        console.log(details + '\n\n')
+        memberData.push(details)
       })
-      resolve("success")
+      resolve(memberData)
     }, function done(err) {
       if (err) { console.error(err); reject(err) }
     })
@@ -109,9 +112,9 @@ function checkNewMembers(tableName) {
       records.forEach(function(record) {
         emails.push(record.get('Email'))
       })
-      console.log('before ' + emails[emails.length-1])
+      //console.log('before ' + emails[emails.length-1])
       airtableEmail = checkIsEmpty(emails)
-      console.log('after ' + airtableEmail[airtableEmail.length-1])
+      //console.log('after ' + airtableEmail[airtableEmail.length-1])
     }, function done(err) {
       if(err) {
         console.error(err)
@@ -129,15 +132,14 @@ function checkNewMembers(tableName) {
 //until it equals the last member of Airtable.
 function checkPreviousMembers(csvEmails, airtableEmails) {
   let newMembers = []
-  console.log('email: ' +  airtableEmails)
   for(var i = csvEmails.length-1; i > 0; i--) {
     if(csvEmails[i][4] != airtableEmails) {
       //console.log(csvEmails[i][4] + " shouldn't be called " + AirtableEmails)
       newMembers.push(csvEmails[i])
     } else {
       //console.log(csvEmails[i][4] + ' is equal to ' + AirtableEmails)
-      console.log(newMembers)
-      console.log(newMembers.length)
+      // console.log(newMembers)
+      // console.log(newMembers.length)
       createMember(AIRTABLE_TABLE, newMembers)
       return newMembers
     }
@@ -160,15 +162,12 @@ function checkIsUpdated() {
   }).then(function() {
     if(airtableEmail.length <= csvEmail.length) {
       if(csvEmail[csvEmail.length-1][4] != tempEmail2) {
-        console.log(csvEmail[csvEmail.length-1][4] + ' != ' + tempEmail2)
         checkPreviousMembers(csvEmail, tempEmail2)
       } else {
-        console.log(csvEmail[csvEmail.length-1][4] + ' == ' + tempEmail2)
       }
     }
     else {
      console.error('Airtable is greater size than the member list, please check Airtable for anomalies')
-     console.log('Airtable length = ' + airtableEmail.length + '\nCSV length = ' + csvEmail.length)
     }
   }).catch(function(err) {
     console.error(err)
@@ -210,24 +209,30 @@ function createMember(tableName, memberDetails) {
 
 module.exports = {
   readCSV: function() {
-    readCSV().then(function(myResolve) {
-      console.log(myResolve)
-    }).catch(function(err) {
-      console.log(err)
+    return new Promise(function(resolve, reject) {
+      readCSV().then(function(myResolve) {
+        resolve(myResolve)
+      }).catch(function(err) {
+        resolve(err)
+      })
     })
   },
   searchMember: function(first, last) {
-    searchMember(first, last).then(function(myResolve) {
-      console.log(myResolve)
-    }).catch(function(err) {
-      console.error("Error occurred " + err)
+    return new Promise(function(resolve, reject) {
+      searchMember(first, last).then(function(myResolve) {
+        resolve(myResolve)
+      }).catch(function(err) {
+        reject(err)
+      })
     })
   },
   listAllMembers: function() {
-    return listAllMembers().then(function(myResolve) {
-      return myResolve
-    }).catch(function(err) {
-      console.error("Error occurred " + err)
+    return new Promise(function(resolve, reject) {
+      listAllMembers().then(function(myResolve) {
+        resolve(myResolve)
+      }).catch(function(err) {
+        reject(err)
+      })
     })
   },
   checkIsUpdated: function() {

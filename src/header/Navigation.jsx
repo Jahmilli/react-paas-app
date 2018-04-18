@@ -44,6 +44,9 @@ render() {
             <LinkContainer to="/contact">
               <NavItem eventKey={4}>Contact</NavItem>
             </LinkContainer>
+            <LinkContainer to="/admin">
+              <NavItem eventKey={4}>Admin</NavItem>
+            </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

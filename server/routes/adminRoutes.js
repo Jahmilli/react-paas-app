@@ -6,22 +6,36 @@ const request = require('request-promise'); //Can look at other alternatives lat
 const router = express.Router()
 
 router.get('/members', (req, res) => {
-    res.send("Hello")
-    console.log(airtableMembers.listAllMembers())
+  airtableMembers.listAllMembers().then(function(myResolve) {
+    console.log(myResolve)
+    res.send(myResolve)
+  }).catch(function(err) {
+    console.log(err)
   })
+})
 
 router.get('/updates', (req, res) => {
-    console.log(airtableMembers.checkIsUpdated)
     res.send(airtableMembers.checkIsUpdated())
 })
 
 router.get('/search', (req, res) => {
-  airtableMembers.searchMember('Jason', 'Ho')
-  res.send('found')
+  airtableMembers.searchMember('Jason', 'Ho').then(function(resolve) {
+    console.log(resolve)
+    res.send(resolve)
+  }).catch(function(err) {
+    console.log(err)
+    res.send(err)
+  })
 })
 
 router.get('/csv', (req, res) => {
-  airtableMembers.readCSV()
+  airtableMembers.readCSV().then(function(myResolve) {
+    console.log(myResolve)
+    res.send(myResolve)
+  }).catch(function(err) {
+    console.log(err)
+    res.send(err)
+  })
 })
 
 router.get('/facebook-search/:id?', (req, res) => {
@@ -42,6 +56,5 @@ router.get('/facebook-search/:id?', (req, res) => {
       res.json(fbRes);
     })
 })
-
 
 module.exports = router
