@@ -486,3 +486,15 @@ body {
     font-family: Moon;
   }
 }
+
+/* Admin Page */
+.Admin-Page {
+}
+
+.Member-Info-Lockup p {
+  display: inline-block;
+}
+
+.QueryMember-Form {
+  width: 50vh;  
+}

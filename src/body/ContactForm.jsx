@@ -15,7 +15,7 @@ export default class ContactForm extends Component {
     };
   }
 
-  _onPressButtonPOST() {
+  _onPressButtonPOST() {    
     if(!this.getNameValidationState()) {
       alert("Please Enter Correct Characters");
     } else {

@@ -18,8 +18,9 @@ router.get('/updates', (req, res) => {
     res.send(airtableMembers.checkIsUpdated())
 })
 
-router.get('/search', (req, res) => {
-  airtableMembers.searchMember('Jason', 'Ho').then(function(resolve) {
+router.post('/search', (req, res) => {
+  airtableMembers.searchMember(req.body.firstName, req.body.lastName).then(function(resolve) {
+    console.log(JSON.stringify(req.body))
     console.log(resolve)
     res.send(resolve)
   }).catch(function(err) {
