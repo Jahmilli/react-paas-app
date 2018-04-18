@@ -77,7 +77,7 @@ function searchMember(first, last) {
         if(record.get('First Name') == first && record.get('Last Name') == last) {
           let details = []
           for(var i in AIRTABLE_COLUMNS) {
-            details.push(AIRTABLE_COLUMNS[i] + ': ' + record.get(AIRTABLE_COLUMNS[i]))
+            details.push(record.get(AIRTABLE_COLUMNS[i]))
           }
           resolve(details)
         }

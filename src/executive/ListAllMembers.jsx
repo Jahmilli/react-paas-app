@@ -39,7 +39,9 @@ export default class ListAllMembers extends Component {
   render() {
     return (
       <div>
-        <Button onClick={this.getMembers.bind(this)}>Get Member List</Button>
+        <Button type="submit" onClick={this.getMembers.bind(this)} bsSize="large" bsStyle="primary">
+        Click Me
+        </Button>
         {this.mapMembers()}
       </div>
     );

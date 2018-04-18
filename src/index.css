@@ -425,7 +425,7 @@ body {
   background-color: rgba(0,0,0,0.7);
   color: white;
   height: 150px;
-  position: static bottom;
+  bottom: 0px;
 }
 
 .FooterMediaIconsLockup {
@@ -496,5 +496,5 @@ body {
 }
 
 .QueryMember-Form {
-  width: 50vh;  
+  width: 50vh;
 }

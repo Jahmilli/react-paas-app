@@ -24,12 +24,13 @@ export default class QueryMember extends Component {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          firstName: this.state.firstName,
-          lastName: this.state.lastName,
+          firstName: this.state.firstName.trim(),
+          lastName: this.state.lastName.trim(),
         })
       }).then((res) => {return res.json()})
-        .then(function(user) {
-          console.log(user)
+        .then((user) => {
+          this.setState({memberDetails: user})
+          console.log(user);
         })
         .catch((err) => {
           console.error("Error occured " + err);
@@ -45,6 +46,20 @@ export default class QueryMember extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
+  }
+
+  renderMemberDetails() {
+    if(this.state.memberDetails.length > 1) {
+      let user = this.state.memberDetails;
+      return (
+        <div style={{textAlign: "left"}}>
+          <p><strong>Name:</strong> {user[2]} {user[3]}</p>
+          <p><strong>Email:</strong> {user[0]}</p>
+          <p><strong>Faculty:</strong> {user[11]}</p>
+          <p><strong>Signed up:</strong> {user[1]}</p>
+        </div>
+      );
+    }
   }
 
   render() {
@@ -64,6 +79,7 @@ export default class QueryMember extends Component {
           Send Message
         </Button>
       </form>
+      {this.renderMemberDetails()}
       </div>
     );
   }
