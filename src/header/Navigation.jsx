@@ -1,6 +1,8 @@
 import React from 'react';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
+import { bootstrapUtils } from 'react-bootstrap/lib/utils';
+bootstrapUtils.addStyle(NavItem, 'custom');
 
 export default class Navigation extends React.Component {
 renderGallery() {
@@ -15,6 +17,9 @@ renderGallery() {
 }
 
 render() {
+  var styles={
+    "color": "red"
+  }
   return (
     <Navbar style={{marginBottom: "0px"}}>
       <Navbar.Header>
@@ -25,7 +30,7 @@ render() {
         <Navbar.Collapse>
           <Nav pullRight>
             <LinkContainer exact={true} to="/">
-              <NavItem eventKey={1}>Home</NavItem>
+              <NavItem style={styles} eventKey={1}>Home</NavItem>
             </LinkContainer>
             <LinkContainer to="/about">
               <NavItem eventKey={2}>About</NavItem>

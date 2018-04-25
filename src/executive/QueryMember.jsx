@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { FormGroup, ControlLabel, FormControl, Button } from 'react-bootstrap';
+import { FormGroup, ControlLabel, FormControl, Button, Panel } from 'react-bootstrap';
+import { bootstrapUtils } from 'react-bootstrap/lib/utils';
 
 let URL = '/admin/search/'
 export default class QueryMember extends Component {
@@ -52,11 +53,17 @@ export default class QueryMember extends Component {
     if(this.state.memberDetails.length > 1) {
       let user = this.state.memberDetails;
       return (
-        <div style={{textAlign: "left"}}>
-          <p><strong>Name:</strong> {user[2]} {user[3]}</p>
-          <p><strong>Email:</strong> {user[0]}</p>
-          <p><strong>Faculty:</strong> {user[11]}</p>
-          <p><strong>Signed up:</strong> {user[1]}</p>
+        <div style={{textAlign: "left", marginTop: "5vh"}}>
+          <Panel bsStyle="success">
+            <Panel.Heading>
+              <Panel.Title componentClass="h3">{user[2]} {user[3]}</Panel.Title>
+            </Panel.Heading>
+            <Panel.Body>
+              <p><strong>Email:</strong> {user[0]}</p>
+              <p><strong>Faculty:</strong> {user[11]}</p>
+              <p><strong>Date Signed Up:</strong> {user[1]}</p>
+            </Panel.Body>
+          </Panel>
         </div>
       );
     }
@@ -75,8 +82,8 @@ export default class QueryMember extends Component {
           <FormControl type="text" value={this.state.lastName} placeholder="Last Name" onChange={this.handleChange} />
           <FormControl.Feedback />
         </FormGroup>
-        <Button type="submit" onClick={this._onPressButtonPOST.bind(this)} bsSize="large" bsStyle="primary">
-          Send Message
+        <Button onClick={this._onPressButtonPOST.bind(this)} bsSize="large" bsStyle="primary">
+          Search Member
         </Button>
       </form>
       {this.renderMemberDetails()}

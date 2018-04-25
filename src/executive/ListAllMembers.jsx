@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Col, Panel, Row } from 'react-bootstrap';
+import { bootstrapUtils } from 'react-bootstrap/lib/utils';
 
 import MemberDetails from './MemberDetails';
 
@@ -27,22 +28,36 @@ export default class ListAllMembers extends Component {
     if(this.state.memberList.length > 1) {
       return this.state.memberList.map((member, index) => {
         return (
-          <div>
-            <MemberDetails name={member[3]} email={member[0]} birthday={member[7]} faculty={member[11]} />
-          </div>
+          <Col md={4}>
+            <div style={{textAlign: "left", marginTop: "5vh"}}>
+              <Panel bsStyle="success">
+                <Panel.Heading>
+                  <Panel.Title componentClass="h3">{member[2]} {member[3]}</Panel.Title>
+                </Panel.Heading>
+                <Panel.Body>
+                  <div style={{marginBottom: "15px"}}>
+                    <p><strong>Email</strong><br /> {member[0]}</p>
+                    <p><strong>Birthday</strong><br /> {member[1]}</p>
+                    <p><strong>Faculty</strong><br /> {member[11]}</p>
+                  </div>
+                </Panel.Body>
+              </Panel>
+            </div>
+          </Col>
         );
       })
     }
   }
 
-
   render() {
     return (
-      <div>
-        <Button type="submit" onClick={this.getMembers.bind(this)} bsSize="large" bsStyle="primary">
+      <div className="container">
+        <Button type="submit" bsStyle="primary" onClick={this.getMembers.bind(this)}>
         Click Me
         </Button>
-        {this.mapMembers()}
+        <Row>
+          {this.mapMembers()}
+        </Row>
       </div>
     );
   }

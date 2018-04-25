@@ -62,13 +62,17 @@ function listAllMembers() {
       if (err) { console.error(err); reject(err) }
     })
   })
+}
 
+function capitalizeFirstLetter(string) {
+    string = string.toLowerCase();
+    return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
 function searchMember(first, last) {
-  // let delimiter = name.indexOf(' ')
-  // let first = name.substr(0, delimiter)
-  // let last = name.substr(delimiter+1, name.length-1)
+  first = capitalizeFirstLetter(first);
+  last = capitalizeFirstLetter(last);
+
   return new Promise(function(resolve, reject) {
     base(AIRTABLE_TABLE).select({
       view: 'Grid view'

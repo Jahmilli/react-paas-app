@@ -5,7 +5,7 @@ import QueryMember from '../executive/QueryMember';
 export default class AdminPage extends Component {
   render() {
     return (
-      <div className="Admin-Page">
+      <div className="Admin-Page container">
         <h1>Admin Page</h1>
         <div style={{textAlign: "center"}}>
           <QueryMember />
