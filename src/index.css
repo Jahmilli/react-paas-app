@@ -491,6 +491,22 @@ body {
 .Admin-Page {
 }
 
+#AdminLinks-Lockup {
+
+
+}
+
+.AdminLink-Icon {
+  height: 5vh;
+  width: 5vh;
+  margin: 0 1% 0 1%;
+  color: rgba(0,0,0,0.7);
+}
+
+.AdminLink-Icon:hover {
+  color: rgba(0,0,0,1);
+}
+
 .Member-Info-Lockup p {
   display: inline-block;
 }

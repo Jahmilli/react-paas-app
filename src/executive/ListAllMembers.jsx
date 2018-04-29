@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Button, Col, Panel, Row } from 'react-bootstrap';
 import { bootstrapUtils } from 'react-bootstrap/lib/utils';
 
-import MemberDetails from './MemberDetails';
-
 const URL = '/admin/members';
 export default class ListAllMembers extends Component {
   constructor(props) {

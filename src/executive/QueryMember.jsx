@@ -30,8 +30,7 @@ export default class QueryMember extends Component {
         })
       }).then((res) => {return res.json()})
         .then((user) => {
-          this.setState({memberDetails: user})
-          console.log(user);
+          this.setState({memberDetails: user})          
         })
         .catch((err) => {
           console.error("Error occured " + err);
@@ -62,6 +61,7 @@ export default class QueryMember extends Component {
               <p><strong>Email:</strong> {user[0]}</p>
               <p><strong>Faculty:</strong> {user[11]}</p>
               <p><strong>Date Signed Up:</strong> {user[1]}</p>
+              <p><strong>Random: </strong> {user[9]}</p>
             </Panel.Body>
           </Panel>
         </div>
